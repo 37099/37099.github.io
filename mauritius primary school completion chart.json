@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Mauritius female primary completion rate",
+  "data": {
+    "url": "https://raw.githubusercontent.com/37099/37099.github.io/main/Mauritius%20female%20primary%20grad%20rate%20over%20time.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"calculate": "toNumber(replace(datum.graduation, '\"', ''))", "as": "graduation"},
+    {"filter": "isValid(datum.graduation)"}
+  ],
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "year", "type": "temporal"},
+    "y": {
+      "field": "graduation",
+      "type": "quantitative",
+      "scale": {"domain": [0, 110]}
+    }
+  }
+}
