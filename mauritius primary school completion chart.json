@@ -1,6 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "description": "Mauritius female primary completion rate",
+  "title": "Primary School Graduation Rates in Mauritius, Female",
   "data": {
     "url": "https://raw.githubusercontent.com/37099/37099.github.io/main/Mauritius%20female%20primary%20grad%20rate%20over%20time.csv",
     "format": {"type": "csv"}
