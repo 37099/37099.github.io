@@ -11,6 +11,9 @@
     "format": {
     "property": "[1]"
   }},
+  "transform": [
+  {"filter": "datum.date < 946684800001"}
+],
   "mark": {"type": "line",
     "color": "#0d845677"},
   "encoding": {

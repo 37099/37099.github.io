@@ -11,6 +11,9 @@
     "format": {
     "property": "[1]"
   }},
+    "transform": [
+  {"filter": "datum.date < 946684800001"}
+],
   "mark": "line",
   "encoding": {
     "x": {"field": "date", "type": "temporal", "title": "", "axis": {"grid":false}},
