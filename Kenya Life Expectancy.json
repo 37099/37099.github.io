@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Kenya Life Expectancy",
+    "title": {
+    "text": "Life Expectancy in Kenya",
+    "subtitle": "Source: World Bank Open Data",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12},
+  "data": {"url": "https://api.worldbank.org/v2/country/KEN/indicator/SP.DYN.LE00.IN?format=json&per_page=160",
+    "format": {
+    "property": "[1]"
+  }},
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": "", "axis": {"grid":false}},
+    "y": {"field": "value", "type": "quantitative", "title": "age","scale": {"zero": false}, "axis": {"titleAngle": 0, "titleAlign":"left", "titleX": -40}}
+  }
+}
