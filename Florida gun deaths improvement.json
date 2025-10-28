@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 420,
+  "height": 240,
+  "background": "white",
+  "padding": 10,
+  "title": {
+    "text": "Gun deaths in Florida",
+    "subtitle": "Number of murders committed using firearms",
+    "anchor": "start",
+    "fontSize": 22,
+    "subtitleFontSize": 12,
+    "color": "black",
+    "subtitleColor": "#444",
+    "subtitlePadding": 4
+  },
+  "data": {
+    "values": [
+      {"date": "1990-01-01", "deaths": 873},
+      {"date": "1991-01-01", "deaths": 820},
+      {"date": "1992-01-01", "deaths": 800},
+      {"date": "1993-01-01", "deaths": 760},
+      {"date": "1994-01-01", "deaths": 720},
+      {"date": "1995-01-01", "deaths": 680},
+      {"date": "1996-01-01", "deaths": 640},
+      {"date": "1997-01-01", "deaths": 610},
+      {"date": "1998-01-01", "deaths": 560},
+      {"date": "1999-01-01", "deaths": 490},
+      {"date": "2000-01-01", "deaths": 510},
+      {"date": "2001-01-01", "deaths": 530},
+      {"date": "2002-01-01", "deaths": 560},
+      {"date": "2003-01-01", "deaths": 590},
+      {"date": "2004-01-01", "deaths": 570},
+      {"date": "2005-01-01", "deaths": 555},
+      {"date": "2006-01-01", "deaths": 760},
+      {"date": "2007-01-01", "deaths": 860},
+      {"date": "2008-01-01", "deaths": 700},
+      {"date": "2009-01-01", "deaths": 630},
+      {"date": "2010-01-01", "deaths": 600},
+      {"date": "2011-01-01", "deaths": 640},
+      {"date": "2012-01-01", "deaths": 721}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "color": "darkred", "strokeWidth": 1.5},
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "timeUnit": "year",
+          "axis": {
+            "format": "%Y",
+            "labelColor": "black",
+            "tickColor": null,
+            "domain": false,
+            "title": null,
+            "labelFontSize": 10,
+            "labelFontWeight": "bold"
+          },
+          "scale": {"domain": [{"year": 1990}, {"year": 2012}]}
+        },
+        "y": {
+          "field": "deaths",
+          "type": "quantitative",
+          "scale": {"domain": [0, 1000]},
+          "axis": {
+            "values": [0, 500, 1000],
+            "labelColor": "black",
+            "tickColor": null,
+            "domain": false,
+            "grid": true,
+            "gridColor": "#f4f4f4",
+            "gridWidth": 0.5,
+            "title": null,
+            "labelFontSize": 10
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "dy": -8,
+        "fontSize": 8,
+        "color": "#555",
+        "lineBreak": "\n"
+      },
+      "encoding": {
+        "x": {"datum": {"year": 2005, "month": 1, "date": 1}},
+        "y": {"datum": 485},
+        "text": {"value": "2005\nFlorida enacted its\n‘Stand Your Ground’ law"}
+      }
+    }
+  ]
+}
