@@ -29,6 +29,6 @@
       "title": "US$",
       "scale": {"zero": false},
       "axis": {"titleAngle": 0, "titleAlign": "left", "titleX": -40}
-    },
+    }
   }
 }
