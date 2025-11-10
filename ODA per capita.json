@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Increase in Development Assistance",
+    "title": {
+    "text": "Increase in Development Assistance",
+    "subtitle": "Net increase in ODA per capita. Source: World Bank",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12},
+  "data": {
+    "url": "https://api.worldbank.org/v2/country/WLD/indicator/DT.ODA.ODAT.PC.ZS?format=json&per_page=200",
+    "format": {"property": "1"}
+  },
+  "transform": [
+    {"filter": "datum.value != null"},
+    {"calculate": "toNumber(datum.date)", "as": "year"}
+  ],
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "axis": {"grid": false, "format": "d", "tickMinStep": 1},
+      "title": ""
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "US$",
+      "scale": {"zero": false},
+      "axis": {"titleAngle": 0, "titleAlign": "left", "titleX": -40}
+    },
+  }
+}
