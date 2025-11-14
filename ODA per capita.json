@@ -1,9 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "description": "Increase in Development Assistance",
+  "description": "Increase in ODA",
     "title": {
     "text": "Increase in Development Assistance",
-    "subtitle": "Net increase in ODA per capita. Source: World Bank",
+    "subtitle": "Net ODA received per capita. Source: World Bank",
     "anchor": "start",
     "fontSize": 18,
     "subtitleFontSize": 12},
