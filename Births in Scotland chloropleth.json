@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Choropleth map of Scotland showing number of live births by council area, 2023/24.",
+  "title": "Births in Scotland, 2023/24",
+  "width": 350,
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/MappingWorkshop/geo_data/LAD_SCT_2025_05.topojson",
+    "format": { "type": "topojson", "feature": "object_name" }
+  },
+  "transform": [
+    {
+      "lookup": "properties.LAD25CD",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/37099/37099.github.io/refs/heads/main/Scottish%20NHS%20Births%20Data_202324_Totals.csv"
+        },
+        "key": "CA",
+        "fields": ["Livebirths_total"]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "field": "Livebirths_total",
+      "type": "quantitative",
+      "scale": { "scheme": "blues" },
+      "title": "Live Births"
+    },
+    "tooltip": [
+      { "field": "properties.LAD25NM", "type": "nominal", "title": "Council Area" },
+      { "field": "Livebirths_total", "type": "quantitative", "title": "Live Births", "format": "," }
+    ]
+  },
+  "projection": { "type": "mercator" }
+}
