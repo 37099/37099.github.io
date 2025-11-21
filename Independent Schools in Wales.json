@@ -37,7 +37,7 @@
         "latitude": {"field": "lat", "type": "quantitative"},
         "color": {"value": "#D36800"},
         "tooltip": [
-          {"field": "name"},
+          {"field": "name"}
         ]
       }
     }
