@@ -12,7 +12,7 @@
   },
   "mark": {
     "type": "geoshape",
-    "fill": "lightgreen",
+    "fill": "lightseagreen",
     "stroke": "white",
     "strokeWidth": 0.5
   },
