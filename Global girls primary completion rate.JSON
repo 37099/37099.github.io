@@ -101,7 +101,7 @@
       "encoding": {
         "x": {"field": "year_num", "type": "quantitative"},
         "y": {"field": "rate", "type": "quantitative"},
-        "text": {"value": "Morocco (most improved)"}
+        "text": {"value": "Morocco"}
       }
     },
     {
@@ -113,7 +113,7 @@
       "encoding": {
         "x": {"field": "latest.year_num", "type": "quantitative"},
         "y": {"field": "latest.rate", "type": "quantitative"},
-        "text": {"value": "Chad (lowest)"}
+        "text": {"value": "Chad"}
       }
     },
     {

@@ -39,22 +39,29 @@
         <div class="chart-description">
             <h2>Introduction</h2>
             <p> 
-                From a global perspective, girls education has steadily improved worldwide since 2000. 
+                There has been significant improvement in girls' primary education worldwide since 2000. Morocco has shown the most dramatic improvement, while Chad is the poorest performer. However, most countries are improving, as the chart below shows.
             </p>
         </div>
         <figure id="Location1"></figure> 
         <p>
-            Note that in the chart above, the data do not account for students who drop out during the final year of primary education. Therefore, this rate serves as a proxy and should be considered an upper estimate of the actual primary completion rate. The rate is calculated as the number of entrants into the last year of primary education over the population of children at the entrance age for the last year of primary education; this returns some values about 100% where there are children starting the school year at a younger or older age.
+            Note that in the chart above, the rate is calculated as the number of entrants into the last year of primary education over the population of children at the entrance age for the last year of primary education; this returns some values above 100% where there are children starting the school year at a younger or older age.
         </p>
+         <p> 
+            Within this globally positive picture, however, there are some countries trending backwards. The worst of these are shown below, with the top improvers for reference.
+            </p>
+        </div>
+        <figure id="Location2"></figure> 
     </section>
 
     <!-- This is a script, it's a way to run JavaScript code on the page -->
     <script>
         // This is a comment in JavaScript - it's a different language to HTML and CSS
 
-        let figure_1_spec = "Global girls primary completion rate.JSON"; // We're storing the URL of the graph we want to display in a variable
+        let figure_1_spec = "Global girls primary completion rate.JSON"; 
+        let figure_2_spec = "Girls education percentage change chart.JSON"
 
-        vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
+        vegaEmbed('#Location1', figure_1_spec) 
+        vegaEmbed('Location2', figure_2_spec)
 
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML

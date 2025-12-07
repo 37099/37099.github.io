@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Basic education for girls: improvements since 2000",
+    "subtitle": "Source: World Bank.",
+    "fontSize": 18,
+    "anchor": "start"
+  },
+  "width": 700,
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/37099/37099.github.io/refs/heads/main/Global%20female%20primary%20grad%20rates%20time%20series.csv"
+  },
+  "transform": [
+    {
+      "fold": ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+      "as": ["year", "completion_rate"]
+    },
+    {
+      "calculate": "datum.completion_rate == '..' ? null : toNumber(datum.completion_rate)",
+      "as": "rate"
+    },
+    {
+      "filter": "datum.rate != null && datum.rate <= 110"
+    },
+    {
+      "calculate": "toNumber(datum.year)",
+      "as": "year_num"
+    },
+    {
+      "calculate": "datum['Country Name'] == 'Burkina Faso' || datum['Country Name'] == 'Dominican Republic' || datum['Country Name'] == 'Ethiopia' || datum['Country Name'] == 'Honduras' || datum['Country Name'] == 'Malaysia' || datum['Country Name'] == 'Mauritius'",
+      "as": "is_highlighted"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeWidth": 1, "opacity": 0.25, "color": "#d5d8dc"},
+      "transform": [{"filter": "!datum.is_highlighted"}],
+      "encoding": {
+        "x": {
+          "field": "year_num", 
+          "type": "quantitative", 
+          "title": "Year", 
+          "scale": {"domain": [2000, 2024]},
+          "axis": {"format": "d"}
+        },
+        "y": {"field": "rate", "type": "quantitative", "title": "Primary Completion Rate (%)", "scale": {"domain": [0, 110]}},
+        "detail": {"field": "Country Name"}
+      }
+    },
+    {
+      "mark": {"type": "line", "strokeWidth": 3},
+      "transform": [{"filter": "datum.is_highlighted"}],
+      "encoding": {
+        "x": {"field": "year_num", "type": "quantitative"},
+        "y": {"field": "rate", "type": "quantitative"},
+        "color": {
+          "field": "Country Name",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Burkina Faso", "Dominican Republic", "Ethiopia", "Honduras", "Malaysia", "Mauritius"],
+            "range": ["#FCD116", "#002D62", "#009639", "#0073CF", "#CC0001", "#E91E63"]
+          },
+          "legend": null
+        },
+        "detail": {"field": "Country Name"}
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 5, "fontSize": 11},
+      "transform": [
+        {"filter": "datum.is_highlighted"},
+        {"filter": "datum.year_num == 2024"}
+      ],
+      "encoding": {
+        "x": {"field": "year_num", "type": "quantitative"},
+        "y": {"field": "rate", "type": "quantitative"},
+        "text": {"field": "Country Name", "type": "nominal"},
+        "color": {
+          "field": "Country Name",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Burkina Faso", "Dominican Republic", "Ethiopia", "Honduras", "Malaysia", "Mauritius"],
+            "range": ["#FCD116", "#002D62", "#009639", "#0073CF", "#CC0001", "#E91E63"]
+          },
+          "legend": null
+        }
+      }
+    }
+  ]
+}
