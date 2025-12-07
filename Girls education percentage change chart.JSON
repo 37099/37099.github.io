@@ -1,0 +1,271 @@
+{
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "data": {"name": "data-ae3edc90685f565279e242ffe6b55ac5"},
+  "mark": {"type": "bar"},
+  "encoding": {
+    "color": {
+      "condition": {
+        "test": "(datum.percentage_change > 0)",
+        "value": "#27ae60"
+      },
+      "value": "#e74c3c"
+    },
+    "x": {
+      "field": "percentage_change",
+      "scale": {"domain": [-35, 35]},
+      "title": "Percentage Change (%)",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Country Name",
+      "sort": "-x",
+      "title": null,
+      "type": "nominal"
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-ae3edc90685f565279e242ffe6b55ac5": [
+      {
+        "2019": 54.75,
+        "2020": null,
+        "2021": 59.25,
+        "2022": 60.29,
+        "2023": 63.98,
+        "2024": 72.85,
+        "Country Name": "Pakistan",
+        "latest_value": 72.85,
+        "percentage_change": 33.059360730593596,
+        "data_points": 5
+      },
+      {
+        "2019": 68.03,
+        "2020": 71.29,
+        "2021": 77.19,
+        "2022": null,
+        "2023": 95.09,
+        "2024": 83.96,
+        "Country Name": "Tanzania",
+        "latest_value": 83.96,
+        "percentage_change": 23.41613993826252,
+        "data_points": 5
+      },
+      {
+        "2019": 85.82,
+        "2020": 89.91,
+        "2021": 101,
+        "2022": 106.23,
+        "2023": 101.72,
+        "2024": 101.75,
+        "Country Name": "Sierra Leone",
+        "latest_value": 101.75,
+        "percentage_change": 18.56210673502681,
+        "data_points": 6
+      },
+      {
+        "2019": 68.43,
+        "2020": 70.5,
+        "2021": 69.04,
+        "2022": 65.66,
+        "2023": 77.65,
+        "2024": 80.82,
+        "Country Name": "Cote d'Ivoire",
+        "latest_value": 80.82,
+        "percentage_change": 18.106093818500636,
+        "data_points": 6
+      },
+      {
+        "2019": 92.93,
+        "2020": 114.43,
+        "2021": 114.58,
+        "2022": 122.73,
+        "2023": 113.83,
+        "2024": 108.25,
+        "Country Name": "Tuvalu",
+        "latest_value": 108.25,
+        "percentage_change": 16.4855267405574,
+        "data_points": 6
+      },
+      {
+        "2019": 102.92,
+        "2020": 104.81,
+        "2021": 114.21,
+        "2022": 106.84,
+        "2023": 94.85,
+        "2024": 96.42,
+        "Country Name": "Belize",
+        "latest_value": 96.42,
+        "percentage_change": -6.315584920326467,
+        "data_points": 6
+      },
+      {
+        "2019": 96.66,
+        "2020": 101.7,
+        "2021": 110.87,
+        "2022": 104.56,
+        "2023": 99.32,
+        "2024": 90.4,
+        "Country Name": "Namibia",
+        "latest_value": 90.4,
+        "percentage_change": -6.476308710945573,
+        "data_points": 6
+      },
+      {
+        "2019": 79.07,
+        "2020": 78.94,
+        "2021": 73.6,
+        "2022": 70.28,
+        "2023": 75.36,
+        "2024": 73.86,
+        "Country Name": "Honduras",
+        "latest_value": 73.86,
+        "percentage_change": -6.589098267358031,
+        "data_points": 6
+      },
+      {
+        "2019": 80.11,
+        "2020": null,
+        "2021": 90.75,
+        "2022": null,
+        "2023": 72.81,
+        "2024": 74.47,
+        "Country Name": "Malawi",
+        "latest_value": 74.47,
+        "percentage_change": -7.04031956060417,
+        "data_points": 4
+      },
+      {
+        "2019": 105.78,
+        "2020": 99.41,
+        "2021": 93.66,
+        "2022": 96.83,
+        "2023": 96.33,
+        "2024": 98.28,
+        "Country Name": "Kyrgyz Republic",
+        "latest_value": 98.28,
+        "percentage_change": -7.090187180941577,
+        "data_points": 6
+      },
+      {
+        "2019": 98.04,
+        "2020": 94.84,
+        "2021": 88.74,
+        "2022": 85.68,
+        "2023": 75.83,
+        "2024": 90.92,
+        "Country Name": "Philippines",
+        "latest_value": 90.92,
+        "percentage_change": -7.2623419012647945,
+        "data_points": 6
+      },
+      {
+        "2019": 87.49,
+        "2020": 86.78,
+        "2021": 88.5,
+        "2022": 82.7,
+        "2023": 81,
+        "2024": null,
+        "Country Name": "Romania",
+        "latest_value": 81,
+        "percentage_change": -7.41799062750028,
+        "data_points": 5
+      },
+      {
+        "2019": 103.34,
+        "2020": 101.68,
+        "2021": 100.29,
+        "2022": 94.07,
+        "2023": null,
+        "2024": null,
+        "Country Name": "United States",
+        "latest_value": 94.07,
+        "percentage_change": -8.970389007160838,
+        "data_points": 4
+      },
+      {
+        "2019": 93.8,
+        "2020": 92.14,
+        "2021": 94.91,
+        "2022": null,
+        "2023": 89.87,
+        "2024": 83.17,
+        "Country Name": "Mauritius",
+        "latest_value": 83.17,
+        "percentage_change": -11.332622601279313,
+        "data_points": 5
+      },
+      {
+        "2019": 64.92,
+        "2020": 66,
+        "2021": 68.57,
+        "2022": 63.65,
+        "2023": 57.23,
+        "2024": 57.37,
+        "Country Name": "Burkina Faso",
+        "latest_value": 57.37,
+        "percentage_change": -11.629698089956877,
+        "data_points": 6
+      },
+      {
+        "2019": 106.26,
+        "2020": 103.24,
+        "2021": 101.11,
+        "2022": 98.03,
+        "2023": 93.25,
+        "2024": null,
+        "Country Name": "Timor-Leste",
+        "latest_value": 93.25,
+        "percentage_change": -12.243553547901378,
+        "data_points": 5
+      },
+      {
+        "2019": 99.15,
+        "2020": 92.35,
+        "2021": 88.96,
+        "2022": 86.83,
+        "2023": null,
+        "2024": null,
+        "Country Name": "Oman",
+        "latest_value": 86.83,
+        "percentage_change": -12.425617750882507,
+        "data_points": 4
+      },
+      {
+        "2019": 85.92,
+        "2020": 79.54,
+        "2021": 84.18,
+        "2022": 75.72,
+        "2023": 71.87,
+        "2024": null,
+        "Country Name": "Lesotho",
+        "latest_value": 71.87,
+        "percentage_change": -16.3524208566108,
+        "data_points": 5
+      },
+      {
+        "2019": 102.37,
+        "2020": null,
+        "2021": 101.35,
+        "2022": null,
+        "2023": 65.06,
+        "2024": 73.31,
+        "Country Name": "Rwanda",
+        "latest_value": 73.31,
+        "percentage_change": -28.38722281918531,
+        "data_points": 4
+      },
+      {
+        "2019": 56.9,
+        "2020": null,
+        "2021": 54.61,
+        "2022": 47.98,
+        "2023": 44.81,
+        "2024": 40.59,
+        "Country Name": "Niger",
+        "latest_value": 40.59,
+        "percentage_change": -28.66432337434094,
+        "data_points": 5
+      }
+    ]
+  }
+}
