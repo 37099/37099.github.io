@@ -1,29 +1,58 @@
 {
-  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "config": {
+    "view": {"continuousWidth": 300, "continuousHeight": 300, "stroke": null},
+    "axis": {"gridColor": null}
+  },
   "data": {"name": "data-ae3edc90685f565279e242ffe6b55ac5"},
   "mark": {"type": "bar"},
   "encoding": {
     "color": {
-      "condition": {
-        "test": "(datum.percentage_change > 0)",
-        "value": "#27ae60"
-      },
-      "value": "#e74c3c"
+      "condition": [
+        {
+          "test": "datum.percentage_change >= 20",
+          "value": "#196f3d"
+        },
+        {
+          "test": "datum.percentage_change >= 10",
+          "value": "#27ae60"
+        },
+        {
+          "test": "datum.percentage_change > 0",
+          "value": "#52be80"
+        },
+        {
+          "test": "datum.percentage_change <= -20",
+          "value": "#922b21"
+        },
+        {
+          "test": "datum.percentage_change <= -10",
+          "value": "#e74c3c"
+        }
+      ],
+      "value": "#ec7063"
     },
     "x": {
       "field": "percentage_change",
       "scale": {"domain": [-35, 35]},
       "title": "Percentage Change (%)",
-      "type": "quantitative"
+      "type": "quantitative",
+      "axis": {"grid": false}
     },
     "y": {
       "field": "Country Name",
       "sort": "-x",
       "title": null,
-      "type": "nominal"
+      "type": "nominal",
+      "axis": {"grid": false}
     }
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "title": {
+    "text": "Where is girls' education backsliding?",
+    "subtitle": "Source: World Bank.",
+    "fontSize": 18,
+    "anchor": "start"
+  },
   "datasets": {
     "data-ae3edc90685f565279e242ffe6b55ac5": [
       {
