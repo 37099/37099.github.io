@@ -51,6 +51,19 @@
             </p>
         </div>
         <figure id="Location2"></figure> 
+        <p> 
+            This perspective is incomplete, as countries in conflict - likely experiencing significant educational disruption - stop reporting. There is no data for Yemen since 2016, for Sudan since 2019, or for Ukraine since 2021, to take just a few examples. For more information, see Colab analysis and results here. 
+            </p>
+    </section>
+
+        <section>
+        <div class="chart-description">
+            <h2>What's happening?</h2>
+            <p> 
+                XXX
+            </p>
+        </div>
+        <figure id="Location3"></figure> 
     </section>
 
     <!-- This is a script, it's a way to run JavaScript code on the page -->
@@ -59,9 +72,11 @@
 
         let figure_1_spec = "Global girls primary completion rate.JSON"; 
         let figure_2_spec = "Girls education percentage change chart.JSON"
+        let figure_3_spec = 
 
         vegaEmbed('#Location1', figure_1_spec) 
         vegaEmbed('#Location2', figure_2_spec)
+        vegaEmbed('#Location3', figure_3_spec)
 
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML

@@ -34,7 +34,7 @@
     "x": {
       "field": "percentage_change",
       "scale": {"domain": [-35, 35]},
-      "title": "Percentage Change (%)",
+      "title": "Percentage Change (%) since 2019",
       "type": "quantitative",
       "axis": {"grid": false}
     },
