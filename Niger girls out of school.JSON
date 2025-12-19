@@ -11,9 +11,9 @@
       "type": "quantitative"
     }
   },
-  "height": 300,
+  "height": 200,
   "title": {"text": "Female adolescents out of school, %", "subtitle": "Niger"},
-  "width": 300,
+  "width": 200,
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "datasets": {
     "data-0e931953b3b2acd995c161be3b439cd5": [

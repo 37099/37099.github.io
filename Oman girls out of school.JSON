@@ -11,9 +11,9 @@
       "type": "quantitative"
     }
   },
-  "height": 300,
-  "title": {"text": "Female adolescents out of school, %", "subtitle": "OM"},
-  "width": 300,
+  "height": 200,
+  "title": {"text": "Female adolescents out of school, %", "subtitle": "Oman"},
+  "width": 200,
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "datasets": {
     "data-0001662d924bb57876347726b78d0e89": [

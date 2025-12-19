@@ -11,9 +11,9 @@
       "type": "quantitative"
     }
   },
-  "height": 300,
+  "height": 200,
   "title": {"text": "Female adolescents out of school, %", "subtitle": "Lesotho"},
-  "width": 300,
+  "width": 200,
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "datasets": {
     "data-d78205aafd2a893254af8a6661e85b54": [
