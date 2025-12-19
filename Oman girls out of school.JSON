@@ -1,0 +1,33 @@
+{
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "data": {"name": "data-0001662d924bb57876347726b78d0e89"},
+  "mark": {"type": "line", "color": "red"},
+  "encoding": {
+    "x": {"field": "date", "title": null, "type": "temporal"},
+    "y": {
+      "field": "value",
+      "scale": {"domain": [0, 100]},
+      "title": null,
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "title": {"text": "Female adolescents out of school, %", "subtitle": "OM"},
+  "width": 300,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-0001662d924bb57876347726b78d0e89": [
+      {"date": "2022", "value": 13.7046682098765},
+      {"date": "2021", "value": 12.1029645994965},
+      {"date": "2020", "value": 12.1712640636056},
+      {"date": "2019", "value": 4.60090602457099},
+      {"date": "2018", "value": 2.65651924181505},
+      {"date": "2017", "value": 2.4715687482038},
+      {"date": "2016", "value": 1.81853680305693},
+      {"date": "2003", "value": 17.838020324707},
+      {"date": "2002", "value": 19.9341793060303},
+      {"date": "2001", "value": 18.2105903625488},
+      {"date": "2000", "value": 17.9834403991699}
+    ]
+  }
+}

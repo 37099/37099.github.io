@@ -89,7 +89,7 @@
         "lineBreak": "\n"
       },
       "encoding": {
-        "x": {"datum": {"year": 2005, "month": 1, "date": 1}},
+        "x": {"datum": {"year": 2004, "month": 1, "date": 1}},
         "y": {"datum": 485},
         "text": {"value": "2005\nFlorida enacted its\n‘Stand Your Ground’ law"}
       }

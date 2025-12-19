@@ -1,0 +1,30 @@
+{
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "data": {"name": "data-24b9cee80fc95320c3111313b219507a"},
+  "mark": {"type": "line", "color": "red"},
+  "encoding": {
+    "x": {"field": "date", "title": null, "type": "temporal"},
+    "y": {
+      "field": "value",
+      "scale": {"domain": [0, 100]},
+      "title": null,
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "title": {"text": "Female adolescents out of school, %", "subtitle": "Rwanda"},
+  "width": 300,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-24b9cee80fc95320c3111313b219507a": [
+      {"date": "2024", "value": 3.72943041070695},
+      {"date": "2023", "value": 3.20461207912776},
+      {"date": "2022", "value": 2.01459335182},
+      {"date": "2021", "value": 2.95654497305474},
+      {"date": "2019", "value": 4.78362927771601},
+      {"date": "2018", "value": 9.66688681965749},
+      {"date": "2017", "value": 27.7946029238604},
+      {"date": "2016", "value": 15.0837692231849}
+    ]
+  }
+}

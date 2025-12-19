@@ -1,0 +1,47 @@
+{
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "data": {"name": "data-0e931953b3b2acd995c161be3b439cd5"},
+  "mark": {"type": "line", "color": "red"},
+  "encoding": {
+    "x": {"field": "date", "title": null, "type": "temporal"},
+    "y": {
+      "field": "value",
+      "scale": {"domain": [0, 100]},
+      "title": null,
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "title": {"text": "Female adolescents out of school, %", "subtitle": "Niger"},
+  "width": 300,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-0e931953b3b2acd995c161be3b439cd5": [
+      {"date": "2024", "value": 79.6574731042125},
+      {"date": "2023", "value": 74.3961421967161},
+      {"date": "2022", "value": 74.1089230036734},
+      {"date": "2021", "value": 73.8117615755344},
+      {"date": "2019", "value": 72.7525589881847},
+      {"date": "2017", "value": 69.6016532444822},
+      {"date": "2016", "value": 70.8979690674977},
+      {"date": "2015", "value": 74.0193641211567},
+      {"date": "2014", "value": 75.6964764656453},
+      {"date": "2012", "value": 82.4788753789773},
+      {"date": "2011", "value": 82.729419017289},
+      {"date": "2010", "value": 82.3933235745952},
+      {"date": "2009", "value": 84.4557418823242},
+      {"date": "2008", "value": 84.1781616210938},
+      {"date": "2007", "value": 83.3271484375},
+      {"date": "2005", "value": 85.9730529785156},
+      {"date": "2004", "value": 89.5674133300781},
+      {"date": "2003", "value": 90.6119918823242},
+      {"date": "2002", "value": 90.5691299438477},
+      {"date": "2001", "value": 90.8911437988281},
+      {"date": "1999", "value": 90.9648208618164},
+      {"date": "1997", "value": 91.2105865478516},
+      {"date": "1991", "value": 92.1624374389648},
+      {"date": "1990", "value": 92.7828063964844},
+      {"date": "1974", "value": 97.4487380981445}
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "data": {"name": "data-78441830e3a747c783c72c8d43fa7777"},
+  "mark": {"type": "line", "color": "red"},
+  "encoding": {
+    "x": {"field": "date", "title": null, "type": "temporal"},
+    "y": {
+      "field": "value",
+      "scale": {"domain": [0, 100]},
+      "title": null,
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "title": {"text": "Female adolescents out of school, %", "subtitle": "Burkina Faso"},
+  "width": 300,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "datasets": {
+    "data-78441830e3a747c783c72c8d43fa7777": [
+      {"date": "2024", "value": 55.465821923009},
+      {"date": "2023", "value": 51.9116416989175},
+      {"date": "2022", "value": 50.4274723429457},
+      {"date": "2021", "value": 46.5459715604415},
+      {"date": "2020", "value": 46.4425574512619},
+      {"date": "2019", "value": 46.1311603807688},
+      {"date": "2018", "value": 44.2491694525428},
+      {"date": "2017", "value": 47.4536205380503},
+      {"date": "2016", "value": 48.8038448084169},
+      {"date": "2015", "value": 43.4826421839155},
+      {"date": "2014", "value": 46.0165068331357},
+      {"date": "2013", "value": 50.0087428941058},
+      {"date": "2012", "value": 54.1081886291504},
+      {"date": "2011", "value": 57.3058582885657},
+      {"date": "2010", "value": 59.3591159042301},
+      {"date": "2009", "value": 74.1484222412109},
+      {"date": "2008", "value": 78.0847091674805},
+      {"date": "2007", "value": 80.9811019897461},
+      {"date": "2006", "value": 82.1437683105469},
+      {"date": "2005", "value": 84.656379699707},
+      {"date": "2004", "value": 84.1745986938477},
+      {"date": "2003", "value": 85.3759002685547},
+      {"date": "2001", "value": 87.6752014160156},
+      {"date": "1999", "value": 84.8199920654297},
+      {"date": "1989", "value": 91.73291015625},
+      {"date": "1983", "value": 95.225700378418}
+    ]
+  }
+}
