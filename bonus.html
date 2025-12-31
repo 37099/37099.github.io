@@ -32,26 +32,27 @@
 </nav>
 <hr>
 
-<h1 class="big" style="margin-bottom:0;">Project</h1>
-
-<h3 class="small">Global Progress on Education for Girls: An Investigation</h3>
+<h1 class="big" style="margin-bottom:0;">Bonus Charts</h1>
 
     <section>
         <div class="chart-description">
             <h2>Introduction</h2>
             <p> 
-                At first glance, the story of girls education looks like a global story of progress. Most countries have improved since the turn of the century, as the chart below shows.
+                There has been significant improvement in girls' primary education worldwide since 2000. Morocco has shown the most dramatic improvement, while Chad is the poorest performer. However, most countries are improving, as the chart below shows.
             </p>
         </div>
         <figure id="Location1"></figure> 
         <p>
-            There are devastating exceptions, including Syria (shown above) and Afghanistan (charted to right based on external estimates). Other countries in conflict - likely experiencing significant educational disruption - stop reporting. There is no data for Yemen since 2016, for Sudan since 2019, or for Ukraine since 2021, for example. For more information, see Colab analysis and results here. 
+            Note that in the chart above, the rate is calculated as the number of entrants into the last year of primary education over the population of children at the entrance age for the last year of primary education; this returns some values above 100% where there are children starting the school year at a younger or older age.
         </p>
          <p> 
-            However, this longer-term view obscures a worrying development in more recent years. In the 2000s, it was reliably the case that more countries 
+            Within this globally positive picture, however, there are some countries trending backwards. The worst of these are shown below, with the top improvers for reference.
             </p>
         </div>
         <figure id="Location2"></figure> 
+        <p> 
+            This perspective is incomplete, as countries in conflict - likely experiencing significant educational disruption - stop reporting. There is no data for Yemen since 2016, for Sudan since 2019, or for Ukraine since 2021, to take just a few examples. For more information, see Colab analysis and results here. 
+            </p>
     </section>
 
         <section>
@@ -64,22 +65,17 @@
         <figure id="Location3"></figure> 
     </section>
 
+    <!-- This is a script, it's a way to run JavaScript code on the page -->
     <script>
         // This is a comment in JavaScript - it's a different language to HTML and CSS
 
-        let figure_1_spec = "Girls education since 2000 overview.JSON"; 
-        let figure_2_spec = "Rolling average chart of girls primary completion rate.JSON"
+        let figure_1_spec = "Global girls primary completion rate.JSON"; 
+        let figure_2_spec = "Girls education percentage change chart.JSON"
         let figure_3_spec = 
 
         vegaEmbed('#Location1', figure_1_spec) 
         vegaEmbed('#Location2', figure_2_spec)
         vegaEmbed('#Location3', figure_3_spec)
-
-        // Do you want to add more graphs?
-        // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
-        // e.g. 
-        // let figure_3_spec = ...
-        // vegaEmbed('#Location3', figure_3_spec)
 
 
     </script>

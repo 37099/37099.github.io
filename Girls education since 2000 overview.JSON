@@ -1,0 +1,157 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Basic Education for Girls: Changes Since 2000",
+    "subtitle": "Green = Improved | Red = Worsened | Gray = Insufficient Data | Source: World Bank",
+    "fontSize": 18,
+    "anchor": "start"
+  },
+  "width": 700,
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/37099/37099.github.io/refs/heads/main/Global%20female%20primary%20grad%20rates%20time%20series.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009",
+        "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019",
+        "2020", "2021", "2022", "2023", "2024"
+      ],
+      "as": ["year", "completion_rate"]
+    },
+    {
+      "calculate": "datum.completion_rate == '..' ? null : toNumber(datum.completion_rate)",
+      "as": "rate"
+    },
+    {"filter": "datum.rate != null && datum.rate <= 110"},
+    {"calculate": "toNumber(datum.year)", "as": "year_num"},
+    {
+      "calculate": "datum.year_num == 2000 ? datum.rate : null",
+      "as": "temp_2000"
+    },
+    {
+      "calculate": "datum.year_num == 2024 ? datum.rate : null",
+      "as": "temp_2024"
+    },
+    {
+      "joinaggregate": [
+        {"op": "max", "field": "temp_2000", "as": "actual_2000"},
+        {"op": "max", "field": "temp_2024", "as": "actual_2024"}
+      ],
+      "groupby": ["Country Name"]
+    },
+    {
+      "calculate": "datum.actual_2000 != null && datum.actual_2024 != null && datum.actual_2000 <= 100 && datum.actual_2024 <= 100 ? (datum.actual_2024 > datum.actual_2000 ? 'Improved' : (datum.actual_2024 < datum.actual_2000 ? 'Worsened' : 'No Change')) : 'Insufficient Data'",
+      "as": "status"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 1,
+        "opacity": 0.4
+      },
+      "transform": [
+        {"filter": "datum.status == 'Insufficient Data' || datum.status == 'No Change'"}
+      ],
+      "encoding": {
+        "x": {
+          "field": "year_num",
+          "type": "quantitative",
+          "title": "Year",
+          "scale": {"domain": [2000, 2024]},
+          "axis": {"format": "d"}
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative",
+          "title": "Primary Completion Rate (%)",
+          "scale": {"domain": [0, 110]}
+        },
+        "color": {
+          "field": "status",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Improved", "Worsened", "No Change", "Insufficient Data"],
+            "range": ["#27ae60", "#e74c3c", "#95a5a6", "#d5d8dc"]
+          },
+          "legend": null
+        },
+        "detail": {"field": "Country Name"}
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.5,
+        "opacity": 0.6
+      },
+      "transform": [
+        {"filter": "datum.status == 'Improved' || datum.status == 'Worsened'"}
+      ],
+      "encoding": {
+        "x": {
+          "field": "year_num",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "status",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Improved", "Worsened", "No Change", "Insufficient Data"],
+            "range": ["#27ae60", "#e74c3c", "#95a5a6", "#d5d8dc"]
+          },
+          "legend": null
+        },
+        "detail": {"field": "Country Name"},
+        "tooltip": {"field": "Country Name", "type": "nominal"}
+      }
+    },
+    {
+      "mark": {"type": "line", "strokeWidth": 5, "color": "#34495e"},
+      "transform": [
+        {
+          "aggregate": [{"op": "mean", "field": "rate", "as": "avg_rate"}],
+          "groupby": ["year_num"]
+        }
+      ],
+      "encoding": {
+        "x": {"field": "year_num", "type": "quantitative"},
+        "y": {"field": "avg_rate", "type": "quantitative"},
+        "tooltip": [
+          {"field": "year_num", "type": "quantitative", "title": "Year", "format": "d"},
+          {"field": "avg_rate", "type": "quantitative", "title": "Global Average (%)", "format": ".1f"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "dy": -5,
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "#34495e"
+      },
+      "transform": [
+        {
+          "aggregate": [{"op": "mean", "field": "rate", "as": "avg_rate"}],
+          "groupby": ["year_num"]
+        },
+        {"filter": "datum.year_num == 2024"}
+      ],
+      "encoding": {
+        "x": {"field": "year_num", "type": "quantitative"},
+        "y": {"field": "avg_rate", "type": "quantitative"},
+        "text": {"value": "Global average"}
+      }
+    }
+  ]
+}

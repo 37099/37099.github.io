@@ -11,9 +11,9 @@
       "type": "quantitative"
     }
   },
-  "height": 200,
+  "height": 150,
   "title": {"text": "Female adolescents out of school, %", "subtitle": "Timor-Leste"},
-  "width": 200,
+  "width": 150,
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "datasets": {
     "data-2f20f556dba2c4ada3f28ffe2e21baca": [
