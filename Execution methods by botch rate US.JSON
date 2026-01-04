@@ -1,0 +1,151 @@
+{
+  "config": {
+    "view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}
+  },
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "opacity": 0.5,
+        "strokeDash": [5, 5]
+      },
+      "encoding": {
+        "y": {"field": "Botched Execution Rate", "type": "quantitative"},
+        "color": {
+          "field": "Method",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Hanging", "Firing Squad"],
+            "range": ["#654321", "#FF69B4"]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "dy": -5,
+        "fontSize": 10,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "Method", "type": "nominal"},
+        "x": {"value": 300},
+        "y": {"field": "Botched Execution Rate", "type": "quantitative"},
+        "color": {
+          "field": "Method",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Hanging", "Firing Squad"],
+            "range": ["#654321", "#FF69B4"]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "data": {"name": "data-0f5557cdef0bf615fde7d197b3a68c7d"},
+      "mark": {"type": "circle", "size": 300},
+      "encoding": {
+        "color": {
+          "field": "Method",
+          "legend": null,
+          "scale": {
+            "domain": ["Electrocution", "Lethal Gas", "Lethal Injection"],
+            "range": ["#0072B2", "#009E73", "#F0E442"]
+          },
+          "type": "nominal"
+        },
+        "tooltip": [
+          {"field": "Method", "type": "nominal"},
+          {"field": "Year_Introduced", "type": "quantitative"},
+          {
+            "field": "Botched Execution Rate",
+            "format": ".1f",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {"format": "d", "grid": false, "title": "Year Introduced"},
+          "field": "Year_Introduced",
+          "scale": {"domain": [1880, 1990]},
+          "type": "quantitative"
+        },
+        "y": {
+          "axis": {"grid": false, "title": "Botched Rate (%)"},
+          "field": "Botched Execution Rate",
+          "scale": {"domain": [0, 8]},
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {"name": "data-0f5557cdef0bf615fde7d197b3a68c7d"},
+      "mark": {"type": "text", "align": "left", "dx": 12, "fontSize": 11},
+      "encoding": {
+        "text": {"field": "Method", "type": "nominal"},
+        "x": {"field": "Year_Introduced", "type": "quantitative"},
+        "y": {"field": "Botched Execution Rate", "type": "quantitative"}
+      }
+    }
+  ],
+  "data": {"name": "data-8b1fc52c466c7874654f2df1a856a34a"},
+  "height": 350,
+  "title":{
+    "text": "Execution Method by Year of Introduction and Botch Rate, U.S.",
+    "subtitle": "Source: Death Penalty Information Center",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "start"
+  },
+  "width": 600,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-8b1fc52c466c7874654f2df1a856a34a": [
+      {
+        "Method": "Hanging",
+        "Total Executions": 2721,
+        "Botched Executions": 85,
+        "Botched Execution Rate": 3.12,
+        "Year_Introduced": 1608
+      },
+      {
+        "Method": "Firing Squad",
+        "Total Executions": 34,
+        "Botched Executions": 0,
+        "Botched Execution Rate": 0,
+        "Year_Introduced": 1608
+      }
+    ],
+    "data-0f5557cdef0bf615fde7d197b3a68c7d": [
+      {
+        "Method": "Electrocution",
+        "Total Executions": 4374,
+        "Botched Executions": 84,
+        "Botched Execution Rate": 1.92,
+        "Year_Introduced": 1890
+      },
+      {
+        "Method": "Lethal Gas",
+        "Total Executions": 593,
+        "Botched Executions": 32,
+        "Botched Execution Rate": 5.4,
+        "Year_Introduced": 1924
+      },
+      {
+        "Method": "Lethal Injection",
+        "Total Executions": 1054,
+        "Botched Executions": 76,
+        "Botched Execution Rate": 7.2,
+        "Year_Introduced": 1982
+      }
+    ]
+  }
+}
