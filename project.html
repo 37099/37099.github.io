@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <!-- The body tag contains the elements that visitors to our page will see. -->
+    <!-- The body tag contains the elements that visitors to my page will see. -->
     <nav>
         <a href="index.html">About</a>
         <a href="portfolio.html">Portfolio</a>
@@ -44,13 +44,11 @@
             <p>
                 For my project, I set out to research the history of capital punishment in the U.S. to validate or challenge my perspective. The central question is whether each successive innovation actually reduced suffering as intended, or merely created an illusion of more humanity. Through interactive visualizations of botched execution rates, time-to-death data, and geographic adoption patterns, the project challenges the narrative of progress in capital punishment and reveals how newer methods often fail more frequently than those they replaced.
             </p>
+            <p>
+                The history of capital punishment in the U.S. spans four key eras: hanging, which predominated from colonial days through the early 20th century; the electric chair; the de facto ban in the mid 1970s following Furman v. Georgia, which ruled that existing death penalty statutes were unconstitutioanl; and the modern era beginning with Gregg v Georgia (which effectively reinstated the death penalty), which has been dominated by lethal injection. However, method use varies significantly by state, as the chart below shows. My Colab analysis for both of the following charts is <a href="https://colab.research.google.com/drive/1SX7xM5HU0rMCM3RIfiiiQGTnGCSdAR2f?usp=sharing">here</a>.
+            </p>
         </div>
         <figure id="Location1"></figure>
-        <p>
-            TKTKTK
-        </p>
-        <p>
-            TKTK </p>
         </div>
         <figure id="Location2"></figure>
         <p>
@@ -73,16 +71,16 @@
         <div class="chart-description">
             <h2>A note on the data</h2>
                     <p>
-              The topic is well-documented, and this project owes enormous credit to the Death Penalty Information Center (DPIC), which maintains an excellent database of all executions going back to 1608. The project combines two primary sources: the Espy File (1608-2002) and the DPIC's modern execution database (1976-2025). Botched execution data was obtained through web scraping DPIC's public table using BeautifulSoup in Python, with reproducible code documented in Google Colab. Data sources are version-controlled in GitHub and charts are regenerated manually from Colab notebooks on an annual basis to capture new data. While not fully automated, this workflow ensures data quality review before publication and maintains full reproducibility through documented notebooks.
+              This project owes enormous credit to the Death Penalty Information Center (DPIC), which maintains an excellent database of all executions going back to 1608. The project combines two primary sources: the Espy File (1608-2002) and the DPIC's modern execution database (1976-2025). Botched execution data was obtained through web scraping DPIC's public table using BeautifulSoup in Python, with reproducible code documented in Google Colab. Data sources are version-controlled in GitHub and charts are regenerated manually from Colab notebooks on an annual basis to capture new data. While not fully automated, this workflow ensures data quality review before publication and maintains full reproducibility through documented notebooks.
             </p>
     </section>
     <script>
         // This is a comment in JavaScript - it's a different language to HTML and CSS
 
         let figure_1_spec = "Execution methods over time US.JSON";
-        let figure_2_spec = "Execution methods by botch rate US.JSON"
+        let figure_2_spec = "Execution methods by state chloropleth.JSON"
         let figure_3_spec = "Gallup humanity of method survey pie chart.JSON"
-        let figure_4_spec = "Execution methods by state chloropleth.JSON"
+        let figure_4_spec = "Execution methods by botch rate.JSON"
 
         vegaEmbed('#Location1', figure_1_spec)
         vegaEmbed('#Location2', figure_2_spec)
