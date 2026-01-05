@@ -44,6 +44,11 @@
             <p>
                 For my project, I set out to research the history of capital punishment in the U.S. to validate or challenge my perspective. The central question is whether each successive innovation actually reduced suffering as intended, or merely created an illusion of more humanity. Through interactive visualizations of botched execution rates, time-to-death data, and geographic adoption patterns, the project challenges the narrative of progress in capital punishment and reveals how newer methods often fail more frequently than those they replaced.
             </p>
+            <section>
+
+    <section>
+         <div class="chart-description">
+            <h2>A Historical Perspective</h2>
             <p>
                 The history of capital punishment in the U.S. spans four key eras: hanging, which predominated from colonial days through the early 20th century; the electric chair; the de facto ban in the mid 1970s following Furman v. Georgia, which ruled that existing death penalty statutes were unconstitutioanl; and the modern era beginning with Gregg v Georgia (which effectively reinstated the death penalty), which has been dominated by lethal injection. However, method use varies significantly by state, as the chart below shows. My Colab analysis for both of the following charts is <a href="https://colab.research.google.com/drive/1SX7xM5HU0rMCM3RIfiiiQGTnGCSdAR2f?usp=sharing">here</a>.
             </p>
@@ -51,17 +56,32 @@
         <figure id="Location1"></figure>
         </div>
         <figure id="Location2"></figure>
+        </section>
+
+    <section>
+       <div class="chart-description">
+            <h2>Is Lethal Injection Better?</h2>
         <p>
-            TKTK </p>
+            The public certainly thinks so:</p>
         </div>
         <figure id="Location3"></figure>
+         <p>
+            But lethal injection has a higher failure rate...</p>
+        <div>
+            <figure id="Location4"></figure>
+        </div>
+                 <p>
+            And takes longer to kill...</p>
+        <div>
+            <figure id="Location5"></figure>
+        </div>
     </section>
 
     <section>
         <div class="chart-description">
-            <h2>What's happening?</h2>
+            <h2>Conclusion</h2>
             <p>
-                First, let's check if TKTK
+                TKTK
             </p>
         </div>
         <figure id="Location4"></figure>
@@ -80,12 +100,14 @@
         let figure_1_spec = "Execution methods over time US.JSON";
         let figure_2_spec = "Execution methods by state chloropleth.JSON"
         let figure_3_spec = "Gallup humanity of method survey pie chart.JSON"
-        let figure_4_spec = "Execution methods by botch rate.JSON"
+        let figure_4_spec = "Execution methods by botch rate US.JSON"
+        let figure_5_spec = "Time to death chart.JSON"
 
         vegaEmbed('#Location1', figure_1_spec)
         vegaEmbed('#Location2', figure_2_spec)
         vegaEmbed('#Location3', figure_3_spec)
         vegaEmbed('#Location4', figure_4_spec)
+        vegaEmbed('#Location5', figure_5_spec)
 
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML

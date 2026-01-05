@@ -23,7 +23,8 @@
   },
   "title": {
     "text": "Which method is the most humane?",
-    "subtitle": "Source: Gallup"
+    "subtitle": "Source: Gallup",
+    "anchor":"start"
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
   "datasets": {

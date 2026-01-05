@@ -57,7 +57,7 @@
   "title": {
     "text": "U.S. Executions by Method and State (1608-2025)",
     "anchor": "start",
-    "subtitle": "Select method to view state usage"
+    "subtitle": "Source: Death Penalty Information Center"
   },
   "transform": [
     {

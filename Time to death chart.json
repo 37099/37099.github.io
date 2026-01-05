@@ -1,0 +1,100 @@
+{
+  "config": {
+    "view": {
+      "continuousWidth": 300,
+      "continuousHeight": 300,
+      "stroke": null
+    }
+  },
+  "data": {
+    "name": "data-9982e089089df4ac17bdfcd2d71c1b9c"
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "color": {
+      "field": "Color",
+      "legend": null,
+      "scale": null,
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "Method",
+        "title": "Method",
+        "type": "nominal"
+      },
+      {
+        "field": "Max_Minutes",
+        "title": "Max Time (minutes)",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {
+        "grid": false,
+        "title": "Minutes"
+      },
+      "field": "Max_Minutes",
+      "scale": {
+        "domain": [
+          0,
+          130
+        ]
+      },
+      "type": "quantitative"
+    },
+    "y": {
+      "axis": {
+        "title": ""
+      },
+      "field": "Method",
+      "sort": [
+        "Firing Squad",
+        "Hanging",
+        "Electrocution",
+        "Gas Chamber",
+        "Lethal Injection"
+      ],
+      "type": "nominal"
+    }
+  },
+  "height": 250,
+  "title": {
+    "text": "Maximum Time to Death by Execution Method",
+    "anchor": "start",
+    "subtitle": "Source: U.S. Supreme Court records as reported by NBC News"
+  },
+  "width": 600,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-9982e089089df4ac17bdfcd2d71c1b9c": [
+      {
+        "Method": "Firing Squad",
+        "Max_Minutes": 1,
+        "Color": "#FF69B4"
+      },
+      {
+        "Method": "Hanging",
+        "Max_Minutes": 11,
+        "Color": "#654321"
+      },
+      {
+        "Method": "Electrocution",
+        "Max_Minutes": 15,
+        "Color": "#0072B2"
+      },
+      {
+        "Method": "Gas Chamber",
+        "Max_Minutes": 18,
+        "Color": "#009E73"
+      },
+      {
+        "Method": "Lethal Injection",
+        "Max_Minutes": 120,
+        "Color": "#F0E442"
+      }
+    ]
+  }
+}

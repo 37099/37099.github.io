@@ -60,9 +60,8 @@
   },
   "height": 500,
   "title": {
-    "text": "U.S. Execution Methods Over Time",
+    "text": "U.S. Execution Methods Over Time (1800-2025)",
     "subtitle": "Source: Death Penalty Information Center",
-    "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "start"
   },
