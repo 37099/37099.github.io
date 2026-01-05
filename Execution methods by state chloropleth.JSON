@@ -1,0 +1,598 @@
+{
+  "config": {
+    "view": {"continuousWidth": 300, "continuousHeight": 300, "stroke": null}
+  },
+  "data": {
+    "url": "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json",
+    "format": {"feature": "states", "type": "topojson"}
+  },
+  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.5},
+  "encoding": {
+    "color": {
+      "field": "varSelected",
+      "legend": {"orient": "right", "title": "Number of Executions"},
+      "scale": {
+        "domain": [0, 5, 20, 50, 200, 800],
+        "range": [
+          "#f0f0f0",
+          "#fcbba1",
+          "#fc9272",
+          "#fb6a4a",
+          "#cb181d",
+          "#67000d"
+        ]
+      },
+      "type": "quantitative"
+    },
+    "tooltip": [
+      {"field": "State", "title": "State", "type": "nominal"},
+      {
+        "field": "varSelected",
+        "format": ",",
+        "title": "Executions",
+        "type": "quantitative"
+      }
+    ]
+  },
+  "height": 500,
+  "params": [
+    {
+      "name": "MethodParam",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Hanging",
+          "Electrocution",
+          "Gas Chamber",
+          "Lethal Injection",
+          "Firing Squad",
+          "Other Methods"
+        ],
+        "name": "Select Method: "
+      },
+      "value": "Lethal Injection"
+    }
+  ],
+  "projection": {"type": "albersUsa"},
+  "title": {
+    "text": "U.S. Executions by Method and State (1608-2025)",
+    "anchor": "start",
+    "subtitle": "Select method to view state usage"
+  },
+  "transform": [
+    {
+      "lookup": "id",
+      "default": "0",
+      "from": {
+        "data": {"name": "data-4f7156926b9424a13c699fe4a9c3524b"},
+        "key": "State_FIPS",
+        "fields": [
+          "State",
+          "Hanging",
+          "Electrocution",
+          "Gas Chamber",
+          "Lethal Injection",
+          "Firing Squad",
+          "Other Methods"
+        ]
+      }
+    },
+    {"calculate": "datum[MethodParam]", "as": "varSelected"}
+  ],
+  "width": 800,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-4f7156926b9424a13c699fe4a9c3524b": [
+      {
+        "State": "Alabama",
+        "State_FIPS": 1,
+        "Electrocution": 201,
+        "Firing Squad": 1,
+        "Gas Chamber": 7,
+        "Hanging": 554,
+        "Lethal Injection": 53,
+        "Other Methods": 0
+      },
+      {
+        "State": "Alaska",
+        "State_FIPS": 2,
+        "Electrocution": 0,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 12,
+        "Lethal Injection": 0,
+        "Other Methods": 0
+      },
+      {
+        "State": "Arizona",
+        "State_FIPS": 4,
+        "Electrocution": 0,
+        "Firing Squad": 0,
+        "Gas Chamber": 39,
+        "Hanging": 68,
+        "Lethal Injection": 61,
+        "Other Methods": 0
+      },
+      {
+        "State": "Arkansas",
+        "State_FIPS": 5,
+        "Electrocution": 171,
+        "Firing Squad": 4,
+        "Gas Chamber": 0,
+        "Hanging": 305,
+        "Lethal Injection": 54,
+        "Other Methods": 0
+      },
+      {
+        "State": "California",
+        "State_FIPS": 6,
+        "Electrocution": 0,
+        "Firing Squad": 28,
+        "Gas Chamber": 198,
+        "Hanging": 487,
+        "Lethal Injection": 19,
+        "Other Methods": 0
+      },
+      {
+        "State": "Colorado",
+        "State_FIPS": 8,
+        "Electrocution": 0,
+        "Firing Squad": 0,
+        "Gas Chamber": 32,
+        "Hanging": 69,
+        "Lethal Injection": 2,
+        "Other Methods": 0
+      },
+      {
+        "State": "Connecticut",
+        "State_FIPS": 9,
+        "Electrocution": 18,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 108,
+        "Lethal Injection": 1,
+        "Other Methods": 0
+      },
+      {
+        "State": "Delaware",
+        "State_FIPS": 10,
+        "Electrocution": 0,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 63,
+        "Lethal Injection": 27,
+        "Other Methods": 1
+      },
+      {
+        "State": "Florida",
+        "State_FIPS": 12,
+        "Electrocution": 284,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 117,
+        "Lethal Injection": 91,
+        "Other Methods": 0
+      },
+      {
+        "State": "Georgia",
+        "State_FIPS": 13,
+        "Electrocution": 462,
+        "Firing Squad": 1,
+        "Gas Chamber": 0,
+        "Hanging": 530,
+        "Lethal Injection": 59,
+        "Other Methods": 2
+      },
+      {
+        "State": "Hawaii",
+        "State_FIPS": 15,
+        "Electrocution": 0,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 49,
+        "Lethal Injection": 0,
+        "Other Methods": 0
+      },
+      {
+        "State": "Idaho",
+        "State_FIPS": 16,
+        "Electrocution": 0,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 26,
+        "Lethal Injection": 4,
+        "Other Methods": 0
+      },
+      {
+        "State": "Illinois",
+        "State_FIPS": 17,
+        "Electrocution": 98,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 249,
+        "Lethal Injection": 24,
+        "Other Methods": 1
+      },
+      {
+        "State": "Indiana",
+        "State_FIPS": 18,
+        "Electrocution": 65,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 72,
+        "Lethal Injection": 26,
+        "Other Methods": 0
+      },
+      {
+        "State": "Iowa",
+        "State_FIPS": 19,
+        "Electrocution": 0,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 45,
+        "Lethal Injection": 1,
+        "Other Methods": 0
+      },
+      {
+        "State": "Kansas",
+        "State_FIPS": 20,
+        "Electrocution": 0,
+        "Firing Squad": 1,
+        "Gas Chamber": 0,
+        "Hanging": 56,
+        "Lethal Injection": 0,
+        "Other Methods": 0
+      },
+      {
+        "State": "Kentucky",
+        "State_FIPS": 21,
+        "Electrocution": 164,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 261,
+        "Lethal Injection": 3,
+        "Other Methods": 1
+      },
+      {
+        "State": "Louisiana",
+        "State_FIPS": 22,
+        "Electrocution": 106,
+        "Firing Squad": 6,
+        "Gas Chamber": 1,
+        "Hanging": 506,
+        "Lethal Injection": 15,
+        "Other Methods": 53
+      },
+      {
+        "State": "Maine",
+        "State_FIPS": 23,
+        "Electrocution": 0,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 21,
+        "Lethal Injection": 0,
+        "Other Methods": 0
+      },
+      {
+        "State": "Maryland",
+        "State_FIPS": 24,
+        "Electrocution": 0,
+        "Firing Squad": 2,
+        "Gas Chamber": 3,
+        "Hanging": 298,
+        "Lethal Injection": 9,
+        "Other Methods": 6
+      },
+      {
+        "State": "Massachusetts",
+        "State_FIPS": 25,
+        "Electrocution": 65,
+        "Firing Squad": 14,
+        "Gas Chamber": 0,
+        "Hanging": 262,
+        "Lethal Injection": 0,
+        "Other Methods": 4
+      },
+      {
+        "State": "Michigan",
+        "State_FIPS": 26,
+        "Electrocution": 0,
+        "Firing Squad": 2,
+        "Gas Chamber": 0,
+        "Hanging": 9,
+        "Lethal Injection": 0,
+        "Other Methods": 2
+      },
+      {
+        "State": "Minnesota",
+        "State_FIPS": 27,
+        "Electrocution": 0,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 66,
+        "Lethal Injection": 0,
+        "Other Methods": 0
+      },
+      {
+        "State": "Mississippi",
+        "State_FIPS": 28,
+        "Electrocution": 63,
+        "Firing Squad": 0,
+        "Gas Chamber": 39,
+        "Hanging": 257,
+        "Lethal Injection": 23,
+        "Other Methods": 0
+      },
+      {
+        "State": "Missouri",
+        "State_FIPS": 29,
+        "Electrocution": 0,
+        "Firing Squad": 1,
+        "Gas Chamber": 39,
+        "Hanging": 245,
+        "Lethal Injection": 160,
+        "Other Methods": 0
+      },
+      {
+        "State": "Montana",
+        "State_FIPS": 30,
+        "Electrocution": 0,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 71,
+        "Lethal Injection": 5,
+        "Other Methods": 0
+      },
+      {
+        "State": "Nebraska",
+        "State_FIPS": 31,
+        "Electrocution": 15,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 22,
+        "Lethal Injection": 1,
+        "Other Methods": 0
+      },
+      {
+        "State": "Nevada",
+        "State_FIPS": 32,
+        "Electrocution": 3,
+        "Firing Squad": 1,
+        "Gas Chamber": 32,
+        "Hanging": 30,
+        "Lethal Injection": 19,
+        "Other Methods": 0
+      },
+      {
+        "State": "New Hampshire",
+        "State_FIPS": 33,
+        "Electrocution": 0,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 24,
+        "Lethal Injection": 0,
+        "Other Methods": 0
+      },
+      {
+        "State": "New Jersey",
+        "State_FIPS": 34,
+        "Electrocution": 160,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 189,
+        "Lethal Injection": 0,
+        "Other Methods": 12
+      },
+      {
+        "State": "New Mexico",
+        "State_FIPS": 35,
+        "Electrocution": 7,
+        "Firing Squad": 0,
+        "Gas Chamber": 1,
+        "Hanging": 65,
+        "Lethal Injection": 1,
+        "Other Methods": 0
+      },
+      {
+        "State": "New York",
+        "State_FIPS": 36,
+        "Electrocution": 695,
+        "Firing Squad": 4,
+        "Gas Chamber": 0,
+        "Hanging": 404,
+        "Lethal Injection": 0,
+        "Other Methods": 27
+      },
+      {
+        "State": "North Carolina",
+        "State_FIPS": 37,
+        "Electrocution": 166,
+        "Firing Squad": 0,
+        "Gas Chamber": 198,
+        "Hanging": 414,
+        "Lethal Injection": 57,
+        "Other Methods": 10
+      },
+      {
+        "State": "North Dakota",
+        "State_FIPS": 38,
+        "Electrocution": 0,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 8,
+        "Lethal Injection": 0,
+        "Other Methods": 0
+      },
+      {
+        "State": "Ohio",
+        "State_FIPS": 39,
+        "Electrocution": 315,
+        "Firing Squad": 2,
+        "Gas Chamber": 0,
+        "Hanging": 120,
+        "Lethal Injection": 61,
+        "Other Methods": 1
+      },
+      {
+        "State": "Oklahoma",
+        "State_FIPS": 40,
+        "Electrocution": 82,
+        "Firing Squad": 24,
+        "Gas Chamber": 0,
+        "Hanging": 25,
+        "Lethal Injection": 181,
+        "Other Methods": 1
+      },
+      {
+        "State": "Oregon",
+        "State_FIPS": 41,
+        "Electrocution": 0,
+        "Firing Squad": 2,
+        "Gas Chamber": 18,
+        "Hanging": 102,
+        "Lethal Injection": 4,
+        "Other Methods": 0
+      },
+      {
+        "State": "Pennsylvania",
+        "State_FIPS": 42,
+        "Electrocution": 350,
+        "Firing Squad": 4,
+        "Gas Chamber": 0,
+        "Hanging": 686,
+        "Lethal Injection": 6,
+        "Other Methods": 0
+      },
+      {
+        "State": "Rhode Island",
+        "State_FIPS": 44,
+        "Electrocution": 0,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 47,
+        "Lethal Injection": 0,
+        "Other Methods": 5
+      },
+      {
+        "State": "South Carolina",
+        "State_FIPS": 45,
+        "Electrocution": 251,
+        "Firing Squad": 3,
+        "Gas Chamber": 0,
+        "Hanging": 382,
+        "Lethal Injection": 63,
+        "Other Methods": 19
+      },
+      {
+        "State": "South Dakota",
+        "State_FIPS": 46,
+        "Electrocution": 1,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 14,
+        "Lethal Injection": 5,
+        "Other Methods": 0
+      },
+      {
+        "State": "Tennessee",
+        "State_FIPS": 47,
+        "Electrocution": 131,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 208,
+        "Lethal Injection": 10,
+        "Other Methods": 2
+      },
+      {
+        "State": "Texas",
+        "State_FIPS": 48,
+        "Electrocution": 361,
+        "Firing Squad": 4,
+        "Gas Chamber": 0,
+        "Hanging": 390,
+        "Lethal Injection": 878,
+        "Other Methods": 0
+      },
+      {
+        "State": "Utah",
+        "State_FIPS": 49,
+        "Electrocution": 0,
+        "Firing Squad": 43,
+        "Gas Chamber": 0,
+        "Hanging": 5,
+        "Lethal Injection": 9,
+        "Other Methods": 0
+      },
+      {
+        "State": "Vermont",
+        "State_FIPS": 50,
+        "Electrocution": 5,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 21,
+        "Lethal Injection": 0,
+        "Other Methods": 0
+      },
+      {
+        "State": "Virginia",
+        "State_FIPS": 51,
+        "Electrocution": 291,
+        "Firing Squad": 2,
+        "Gas Chamber": 0,
+        "Hanging": 1026,
+        "Lethal Injection": 143,
+        "Other Methods": 13
+      },
+      {
+        "State": "Washington",
+        "State_FIPS": 53,
+        "Electrocution": 0,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 109,
+        "Lethal Injection": 5,
+        "Other Methods": 0
+      },
+      {
+        "State": "Washington, D.C.",
+        "State_FIPS": 11,
+        "Electrocution": 50,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 68,
+        "Lethal Injection": 0,
+        "Other Methods": 0
+      },
+      {
+        "State": "West Virginia",
+        "State_FIPS": 54,
+        "Electrocution": 9,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 142,
+        "Lethal Injection": 2,
+        "Other Methods": 3
+      },
+      {
+        "State": "Wisconsin",
+        "State_FIPS": 55,
+        "Electrocution": 0,
+        "Firing Squad": 0,
+        "Gas Chamber": 0,
+        "Hanging": 1,
+        "Lethal Injection": 0,
+        "Other Methods": 0
+      },
+      {
+        "State": "Wyoming",
+        "State_FIPS": 56,
+        "Electrocution": 0,
+        "Firing Squad": 0,
+        "Gas Chamber": 5,
+        "Hanging": 17,
+        "Lethal Injection": 2,
+        "Other Methods": 0
+      }
+    ]
+  }
+}
