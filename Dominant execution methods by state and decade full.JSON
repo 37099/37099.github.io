@@ -1,0 +1,5254 @@
+{
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "data": {"name": "data-c109531707c4a871361e3c19e8ff1170"},
+  "mark": {"type": "rect", "stroke": "white", "strokeWidth": 1},
+  "encoding": {
+    "color": {
+      "field": "Method_Category",
+      "legend": {"orient": "right", "title": "Dominant Method"},
+      "scale": {
+        "domain": [
+          "Hanging",
+          "Electrocution",
+          "Gas Chamber",
+          "Lethal Injection",
+          "Firing Squad",
+          "Other Methods"
+        ],
+        "range": [
+          "#654321",
+          "#0072B2",
+          "#009E73",
+          "#F0E442",
+          "#FF69B4",
+          "#999999"
+        ]
+      },
+      "type": "nominal"
+    },
+    "tooltip": [
+      {"field": "State", "title": "State", "type": "nominal"},
+      {"field": "Decade", "title": "Decade", "type": "ordinal"},
+      {
+        "field": "Method_Category",
+        "title": "Dominant Method",
+        "type": "nominal"
+      },
+      {
+        "field": "Count",
+        "format": ",",
+        "title": "Using This Method",
+        "type": "quantitative"
+      },
+      {
+        "field": "Total_Executions",
+        "format": ",",
+        "title": "Total Executions",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {"labelAngle": -45, "title": "Decade"},
+      "field": "Decade",
+      "type": "ordinal"
+    },
+    "y": {
+      "axis": {"title": ""},
+      "field": "State",
+      "sort": {"field": "Count", "op": "sum", "order": "descending"},
+      "type": "nominal"
+    }
+  },
+  "height": 600,
+  "title": {
+    "text": "Evolution of Execution Methods by State",
+    "anchor": "start",
+    "subtitle": "Dominant method per decade, 1800-2020"
+  },
+  "width": 700,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-c109531707c4a871361e3c19e8ff1170": [
+      {
+        "State": "Alabama",
+        "Decade": 1810,
+        "Method_Category": "Firing Squad",
+        "Count": 1,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 14,
+        "Total_Executions": 14
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 44,
+        "Total_Executions": 44
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 61,
+        "Total_Executions": 61
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 97,
+        "Total_Executions": 97
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 53,
+        "Total_Executions": 53
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 19,
+        "Total_Executions": 19
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 32,
+        "Total_Executions": 32
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 73,
+        "Total_Executions": 73
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 75,
+        "Total_Executions": 75
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 50,
+        "Total_Executions": 50
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 35,
+        "Total_Executions": 49
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 63,
+        "Total_Executions": 63
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 51,
+        "Total_Executions": 51
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 20,
+        "Total_Executions": 20
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1980,
+        "Method_Category": "Electrocution",
+        "Count": 14,
+        "Total_Executions": 14
+      },
+      {
+        "State": "Alabama",
+        "Decade": 1990,
+        "Method_Category": "Electrocution",
+        "Count": 24,
+        "Total_Executions": 24
+      },
+      {
+        "State": "Alabama",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 21,
+        "Total_Executions": 31
+      },
+      {
+        "State": "Alabama",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 22,
+        "Total_Executions": 22
+      },
+      {
+        "State": "Alabama",
+        "Decade": 2020,
+        "Method_Category": "Lethal Injection",
+        "Count": 10,
+        "Total_Executions": 17
+      },
+      {
+        "State": "Alaska",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Alaska",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Alaska",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Alaska",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Alaska",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Alaska",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Alaska",
+        "Decade": 1940,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Alaska",
+        "Decade": 1950,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Arizona",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Arizona",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 21,
+        "Total_Executions": 21
+      },
+      {
+        "State": "Arizona",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Arizona",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Arizona",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Arizona",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 17,
+        "Total_Executions": 17
+      },
+      {
+        "State": "Arizona",
+        "Decade": 1930,
+        "Method_Category": "Gas Chamber",
+        "Count": 14,
+        "Total_Executions": 18
+      },
+      {
+        "State": "Arizona",
+        "Decade": 1940,
+        "Method_Category": "Gas Chamber",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Arizona",
+        "Decade": 1950,
+        "Method_Category": "Gas Chamber",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Arizona",
+        "Decade": 1960,
+        "Method_Category": "Gas Chamber",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Arizona",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 34,
+        "Total_Executions": 38
+      },
+      {
+        "State": "Arizona",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Arizona",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 14,
+        "Total_Executions": 14
+      },
+      {
+        "State": "Arizona",
+        "Decade": 2020,
+        "Method_Category": "Lethal Injection",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 1860,
+        "Method_Category": "Firing Squad",
+        "Count": 4,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 46,
+        "Total_Executions": 46
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 98,
+        "Total_Executions": 98
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 57,
+        "Total_Executions": 57
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 46,
+        "Total_Executions": 46
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 32,
+        "Total_Executions": 47
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 36,
+        "Total_Executions": 36
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 53,
+        "Total_Executions": 53
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 38,
+        "Total_Executions": 38
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 18,
+        "Total_Executions": 18
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 40,
+        "Total_Executions": 42
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Arkansas",
+        "Decade": 2020,
+        "Method_Category": "Lethal Injection",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "California",
+        "Decade": 1800,
+        "Method_Category": "Firing Squad",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "California",
+        "Decade": 1820,
+        "Method_Category": "Firing Squad",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "California",
+        "Decade": 1830,
+        "Method_Category": "Firing Squad",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "California",
+        "Decade": 1840,
+        "Method_Category": "Firing Squad",
+        "Count": 8,
+        "Total_Executions": 11
+      },
+      {
+        "State": "California",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 62,
+        "Total_Executions": 64
+      },
+      {
+        "State": "California",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 36,
+        "Total_Executions": 36
+      },
+      {
+        "State": "California",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 27,
+        "Total_Executions": 27
+      },
+      {
+        "State": "California",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 42,
+        "Total_Executions": 42
+      },
+      {
+        "State": "California",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 45,
+        "Total_Executions": 45
+      },
+      {
+        "State": "California",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 48,
+        "Total_Executions": 48
+      },
+      {
+        "State": "California",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 46,
+        "Total_Executions": 46
+      },
+      {
+        "State": "California",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 78,
+        "Total_Executions": 78
+      },
+      {
+        "State": "California",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 99,
+        "Total_Executions": 107
+      },
+      {
+        "State": "California",
+        "Decade": 1940,
+        "Method_Category": "Gas Chamber",
+        "Count": 82,
+        "Total_Executions": 83
+      },
+      {
+        "State": "California",
+        "Decade": 1950,
+        "Method_Category": "Gas Chamber",
+        "Count": 74,
+        "Total_Executions": 74
+      },
+      {
+        "State": "California",
+        "Decade": 1960,
+        "Method_Category": "Gas Chamber",
+        "Count": 30,
+        "Total_Executions": 30
+      },
+      {
+        "State": "California",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 10,
+        "Total_Executions": 14
+      },
+      {
+        "State": "California",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Colorado",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Colorado",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Colorado",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Colorado",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Colorado",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 12,
+        "Total_Executions": 12
+      },
+      {
+        "State": "Colorado",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Colorado",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Colorado",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Colorado",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 15,
+        "Total_Executions": 25
+      },
+      {
+        "State": "Colorado",
+        "Decade": 1940,
+        "Method_Category": "Gas Chamber",
+        "Count": 13,
+        "Total_Executions": 13
+      },
+      {
+        "State": "Colorado",
+        "Decade": 1950,
+        "Method_Category": "Gas Chamber",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Colorado",
+        "Decade": 1960,
+        "Method_Category": "Gas Chamber",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Colorado",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 12,
+        "Total_Executions": 12
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 24,
+        "Total_Executions": 24
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 10,
+        "Total_Executions": 10
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Connecticut",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Delaware",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Delaware",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Delaware",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Delaware",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Delaware",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Delaware",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Delaware",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Delaware",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Delaware",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Delaware",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Delaware",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Delaware",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Delaware",
+        "Decade": 1940,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Delaware",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 18,
+        "Total_Executions": 20
+      },
+      {
+        "State": "Delaware",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Delaware",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Florida",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Florida",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Florida",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Florida",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Florida",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Florida",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Florida",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Florida",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Florida",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 30,
+        "Total_Executions": 30
+      },
+      {
+        "State": "Florida",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 33,
+        "Total_Executions": 33
+      },
+      {
+        "State": "Florida",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 26,
+        "Total_Executions": 34
+      },
+      {
+        "State": "Florida",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 44,
+        "Total_Executions": 44
+      },
+      {
+        "State": "Florida",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 66,
+        "Total_Executions": 66
+      },
+      {
+        "State": "Florida",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 49,
+        "Total_Executions": 49
+      },
+      {
+        "State": "Florida",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 12,
+        "Total_Executions": 12
+      },
+      {
+        "State": "Florida",
+        "Decade": 1970,
+        "Method_Category": "Electrocution",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Florida",
+        "Decade": 1980,
+        "Method_Category": "Electrocution",
+        "Count": 40,
+        "Total_Executions": 40
+      },
+      {
+        "State": "Florida",
+        "Decade": 1990,
+        "Method_Category": "Electrocution",
+        "Count": 45,
+        "Total_Executions": 45
+      },
+      {
+        "State": "Florida",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 34,
+        "Total_Executions": 34
+      },
+      {
+        "State": "Florida",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 31,
+        "Total_Executions": 31
+      },
+      {
+        "State": "Florida",
+        "Decade": 2020,
+        "Method_Category": "Lethal Injection",
+        "Count": 26,
+        "Total_Executions": 26
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 16,
+        "Total_Executions": 17
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 10,
+        "Total_Executions": 10
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 16,
+        "Total_Executions": 16
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 15,
+        "Total_Executions": 15
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 20,
+        "Total_Executions": 20
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 54,
+        "Total_Executions": 54
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 65,
+        "Total_Executions": 65
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 94,
+        "Total_Executions": 94
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 111,
+        "Total_Executions": 111
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 81,
+        "Total_Executions": 81
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 49,
+        "Total_Executions": 64
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 136,
+        "Total_Executions": 137
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 131,
+        "Total_Executions": 131
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 87,
+        "Total_Executions": 87
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 14,
+        "Total_Executions": 14
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1980,
+        "Method_Category": "Electrocution",
+        "Count": 28,
+        "Total_Executions": 28
+      },
+      {
+        "State": "Georgia",
+        "Decade": 1990,
+        "Method_Category": "Electrocution",
+        "Count": 17,
+        "Total_Executions": 17
+      },
+      {
+        "State": "Georgia",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 27,
+        "Total_Executions": 27
+      },
+      {
+        "State": "Georgia",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 29,
+        "Total_Executions": 29
+      },
+      {
+        "State": "Georgia",
+        "Decade": 2020,
+        "Method_Category": "Lethal Injection",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Hawaii",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Hawaii",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Hawaii",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Hawaii",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 10,
+        "Total_Executions": 10
+      },
+      {
+        "State": "Hawaii",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 16,
+        "Total_Executions": 16
+      },
+      {
+        "State": "Hawaii",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Hawaii",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Hawaii",
+        "Decade": 1940,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Idaho",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Idaho",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Idaho",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Idaho",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Idaho",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Idaho",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Idaho",
+        "Decade": 1950,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Idaho",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Idaho",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 18,
+        "Total_Executions": 18
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 18,
+        "Total_Executions": 18
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 21,
+        "Total_Executions": 21
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 28,
+        "Total_Executions": 28
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 37,
+        "Total_Executions": 37
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 23,
+        "Total_Executions": 23
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 21,
+        "Total_Executions": 21
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 62,
+        "Total_Executions": 69
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 62,
+        "Total_Executions": 62
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 18,
+        "Total_Executions": 18
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Illinois",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 24,
+        "Total_Executions": 24
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 10,
+        "Total_Executions": 10
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 13,
+        "Total_Executions": 13
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 12,
+        "Total_Executions": 12
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1910,
+        "Method_Category": "Electrocution",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 12,
+        "Total_Executions": 12
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 33,
+        "Total_Executions": 34
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1980,
+        "Method_Category": "Electrocution",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Indiana",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 8,
+        "Total_Executions": 10
+      },
+      {
+        "State": "Indiana",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 15,
+        "Total_Executions": 15
+      },
+      {
+        "State": "Indiana",
+        "Decade": 2020,
+        "Method_Category": "Lethal Injection",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Iowa",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Iowa",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Iowa",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Iowa",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Iowa",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Iowa",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Iowa",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Iowa",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Iowa",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Iowa",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Iowa",
+        "Decade": 1940,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Iowa",
+        "Decade": 1950,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Iowa",
+        "Decade": 1960,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Iowa",
+        "Decade": 2020,
+        "Method_Category": "Lethal Injection",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Kansas",
+        "Decade": 1850,
+        "Method_Category": "Firing Squad",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Kansas",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Kansas",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Kansas",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Kansas",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Kansas",
+        "Decade": 1940,
+        "Method_Category": "Hanging",
+        "Count": 18,
+        "Total_Executions": 18
+      },
+      {
+        "State": "Kansas",
+        "Decade": 1950,
+        "Method_Category": "Hanging",
+        "Count": 14,
+        "Total_Executions": 14
+      },
+      {
+        "State": "Kansas",
+        "Decade": 1960,
+        "Method_Category": "Hanging",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 19,
+        "Total_Executions": 19
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 18,
+        "Total_Executions": 18
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 20,
+        "Total_Executions": 20
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 41,
+        "Total_Executions": 41
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 18,
+        "Total_Executions": 19
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 38,
+        "Total_Executions": 38
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 37,
+        "Total_Executions": 37
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 28,
+        "Total_Executions": 28
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1910,
+        "Method_Category": "Electrocution",
+        "Count": 30,
+        "Total_Executions": 33
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 33,
+        "Total_Executions": 37
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 48,
+        "Total_Executions": 53
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 34,
+        "Total_Executions": 34
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 16,
+        "Total_Executions": 16
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 1990,
+        "Method_Category": "Electrocution",
+        "Count": 2,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Kentucky",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1810,
+        "Method_Category": "Other Methods",
+        "Count": 16,
+        "Total_Executions": 19
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 42,
+        "Total_Executions": 42
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 45,
+        "Total_Executions": 45
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 25,
+        "Total_Executions": 25
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 25,
+        "Total_Executions": 25
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 63,
+        "Total_Executions": 63
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 46,
+        "Total_Executions": 46
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 62,
+        "Total_Executions": 62
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 51,
+        "Total_Executions": 51
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 46,
+        "Total_Executions": 46
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 60,
+        "Total_Executions": 60
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 40,
+        "Total_Executions": 48
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 26,
+        "Total_Executions": 26
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1980,
+        "Method_Category": "Electrocution",
+        "Count": 36,
+        "Total_Executions": 36
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 10,
+        "Total_Executions": 13
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Louisiana",
+        "Decade": 2020,
+        "Method_Category": "Gas Chamber",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Maine",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Maine",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Maine",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Maine",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Maine",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Maine",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Maine",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 13,
+        "Total_Executions": 13
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 14,
+        "Total_Executions": 14
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 19,
+        "Total_Executions": 20
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 25,
+        "Total_Executions": 25
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 28,
+        "Total_Executions": 28
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 16,
+        "Total_Executions": 16
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 21,
+        "Total_Executions": 21
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 16,
+        "Total_Executions": 16
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1940,
+        "Method_Category": "Hanging",
+        "Count": 44,
+        "Total_Executions": 44
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1950,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1960,
+        "Method_Category": "Gas Chamber",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Maryland",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Maryland",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Maryland",
+        "Decade": 2020,
+        "Method_Category": "Lethal Injection",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Massachusetts",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Massachusetts",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Massachusetts",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 16,
+        "Total_Executions": 16
+      },
+      {
+        "State": "Massachusetts",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 14,
+        "Total_Executions": 14
+      },
+      {
+        "State": "Massachusetts",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Massachusetts",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Massachusetts",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Massachusetts",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Massachusetts",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Massachusetts",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Massachusetts",
+        "Decade": 1900,
+        "Method_Category": "Electrocution",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Massachusetts",
+        "Decade": 1910,
+        "Method_Category": "Electrocution",
+        "Count": 13,
+        "Total_Executions": 13
+      },
+      {
+        "State": "Massachusetts",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 16,
+        "Total_Executions": 16
+      },
+      {
+        "State": "Massachusetts",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 18,
+        "Total_Executions": 18
+      },
+      {
+        "State": "Massachusetts",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Michigan",
+        "Decade": 1810,
+        "Method_Category": "Other Methods",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Michigan",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Michigan",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Michigan",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Minnesota",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Minnesota",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 42,
+        "Total_Executions": 42
+      },
+      {
+        "State": "Minnesota",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Minnesota",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Minnesota",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 18,
+        "Total_Executions": 18
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 34,
+        "Total_Executions": 34
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 38,
+        "Total_Executions": 38
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 52,
+        "Total_Executions": 52
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 14,
+        "Total_Executions": 14
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 31,
+        "Total_Executions": 31
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 51,
+        "Total_Executions": 51
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 49,
+        "Total_Executions": 51
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1950,
+        "Method_Category": "Gas Chamber",
+        "Count": 21,
+        "Total_Executions": 35
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1960,
+        "Method_Category": "Gas Chamber",
+        "Count": 10,
+        "Total_Executions": 10
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 1980,
+        "Method_Category": "Gas Chamber",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Mississippi",
+        "Decade": 2020,
+        "Method_Category": "Lethal Injection",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 19,
+        "Total_Executions": 19
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 12,
+        "Total_Executions": 13
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 23,
+        "Total_Executions": 23
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 49,
+        "Total_Executions": 49
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 51,
+        "Total_Executions": 51
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 33,
+        "Total_Executions": 33
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 22,
+        "Total_Executions": 32
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1940,
+        "Method_Category": "Gas Chamber",
+        "Count": 15,
+        "Total_Executions": 15
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1950,
+        "Method_Category": "Gas Chamber",
+        "Count": 10,
+        "Total_Executions": 10
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1960,
+        "Method_Category": "Gas Chamber",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1980,
+        "Method_Category": "Lethal Injection",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Missouri",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 79,
+        "Total_Executions": 79
+      },
+      {
+        "State": "Missouri",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 41,
+        "Total_Executions": 41
+      },
+      {
+        "State": "Missouri",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 22,
+        "Total_Executions": 22
+      },
+      {
+        "State": "Missouri",
+        "Decade": 2020,
+        "Method_Category": "Lethal Injection",
+        "Count": 16,
+        "Total_Executions": 16
+      },
+      {
+        "State": "Montana",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Montana",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Montana",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 10,
+        "Total_Executions": 10
+      },
+      {
+        "State": "Montana",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 16,
+        "Total_Executions": 16
+      },
+      {
+        "State": "Montana",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 14,
+        "Total_Executions": 14
+      },
+      {
+        "State": "Montana",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Montana",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 12,
+        "Total_Executions": 12
+      },
+      {
+        "State": "Montana",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Montana",
+        "Decade": 1940,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Montana",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Montana",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Nebraska",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Nebraska",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Nebraska",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Nebraska",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Nebraska",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Nebraska",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Nebraska",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Nebraska",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Nebraska",
+        "Decade": 1990,
+        "Method_Category": "Electrocution",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Nebraska",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Nevada",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Nevada",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Nevada",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Nevada",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Nevada",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Nevada",
+        "Decade": 1910,
+        "Method_Category": "Firing Squad",
+        "Count": 1,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Nevada",
+        "Decade": 1920,
+        "Method_Category": "Gas Chamber",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Nevada",
+        "Decade": 1930,
+        "Method_Category": "Gas Chamber",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Nevada",
+        "Decade": 1940,
+        "Method_Category": "Gas Chamber",
+        "Count": 10,
+        "Total_Executions": 10
+      },
+      {
+        "State": "Nevada",
+        "Decade": 1950,
+        "Method_Category": "Gas Chamber",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Nevada",
+        "Decade": 1960,
+        "Method_Category": "Gas Chamber",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Nevada",
+        "Decade": 1970,
+        "Method_Category": "Gas Chamber",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Nevada",
+        "Decade": 1980,
+        "Method_Category": "Lethal Injection",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Nevada",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 8,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Nevada",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "New Hampshire",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "New Hampshire",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "New Hampshire",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "New Hampshire",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "New Hampshire",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "New Hampshire",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "New Hampshire",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "New Hampshire",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "New Hampshire",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "New Hampshire",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 17,
+        "Total_Executions": 17
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 12,
+        "Total_Executions": 12
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 19,
+        "Total_Executions": 19
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 17,
+        "Total_Executions": 17
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 27,
+        "Total_Executions": 40
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1910,
+        "Method_Category": "Electrocution",
+        "Count": 39,
+        "Total_Executions": 39
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 34,
+        "Total_Executions": 34
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 40,
+        "Total_Executions": 40
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 14,
+        "Total_Executions": 14
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 17,
+        "Total_Executions": 17
+      },
+      {
+        "State": "New Jersey",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "New Mexico",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "New Mexico",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "New Mexico",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "New Mexico",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 14,
+        "Total_Executions": 14
+      },
+      {
+        "State": "New Mexico",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 15,
+        "Total_Executions": 15
+      },
+      {
+        "State": "New Mexico",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "New Mexico",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "New Mexico",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "New Mexico",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "New Mexico",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "New Mexico",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "New Mexico",
+        "Decade": 1960,
+        "Method_Category": "Gas Chamber",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "New Mexico",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "New York",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 14,
+        "Total_Executions": 14
+      },
+      {
+        "State": "New York",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 23,
+        "Total_Executions": 27
+      },
+      {
+        "State": "New York",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 22,
+        "Total_Executions": 22
+      },
+      {
+        "State": "New York",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 18,
+        "Total_Executions": 18
+      },
+      {
+        "State": "New York",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 26,
+        "Total_Executions": 26
+      },
+      {
+        "State": "New York",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 40,
+        "Total_Executions": 40
+      },
+      {
+        "State": "New York",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 23,
+        "Total_Executions": 23
+      },
+      {
+        "State": "New York",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 37,
+        "Total_Executions": 37
+      },
+      {
+        "State": "New York",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 53,
+        "Total_Executions": 53
+      },
+      {
+        "State": "New York",
+        "Decade": 1890,
+        "Method_Category": "Electrocution",
+        "Count": 51,
+        "Total_Executions": 51
+      },
+      {
+        "State": "New York",
+        "Decade": 1900,
+        "Method_Category": "Electrocution",
+        "Count": 66,
+        "Total_Executions": 66
+      },
+      {
+        "State": "New York",
+        "Decade": 1910,
+        "Method_Category": "Electrocution",
+        "Count": 121,
+        "Total_Executions": 121
+      },
+      {
+        "State": "New York",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 125,
+        "Total_Executions": 125
+      },
+      {
+        "State": "New York",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 153,
+        "Total_Executions": 153
+      },
+      {
+        "State": "New York",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 114,
+        "Total_Executions": 114
+      },
+      {
+        "State": "New York",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 55,
+        "Total_Executions": 55
+      },
+      {
+        "State": "New York",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 10,
+        "Total_Executions": 10
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 32,
+        "Total_Executions": 33
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 24,
+        "Total_Executions": 24
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 21,
+        "Total_Executions": 21
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 10,
+        "Total_Executions": 10
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 36,
+        "Total_Executions": 36
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 29,
+        "Total_Executions": 29
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 43,
+        "Total_Executions": 43
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 31,
+        "Total_Executions": 31
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 47,
+        "Total_Executions": 47
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1910,
+        "Method_Category": "Electrocution",
+        "Count": 42,
+        "Total_Executions": 43
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 55,
+        "Total_Executions": 55
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 69,
+        "Total_Executions": 131
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1940,
+        "Method_Category": "Gas Chamber",
+        "Count": 112,
+        "Total_Executions": 112
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1950,
+        "Method_Category": "Gas Chamber",
+        "Count": 19,
+        "Total_Executions": 19
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1960,
+        "Method_Category": "Gas Chamber",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1980,
+        "Method_Category": "Lethal Injection",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 19,
+        "Total_Executions": 23
+      },
+      {
+        "State": "North Carolina",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 32,
+        "Total_Executions": 32
+      },
+      {
+        "State": "North Dakota",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "North Dakota",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "North Dakota",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 9,
+        "Total_Executions": 10
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 10,
+        "Total_Executions": 10
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 15,
+        "Total_Executions": 15
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 15,
+        "Total_Executions": 15
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 31,
+        "Total_Executions": 31
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 21,
+        "Total_Executions": 28
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1900,
+        "Method_Category": "Electrocution",
+        "Count": 25,
+        "Total_Executions": 25
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1910,
+        "Method_Category": "Electrocution",
+        "Count": 26,
+        "Total_Executions": 26
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 85,
+        "Total_Executions": 85
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 82,
+        "Total_Executions": 82
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 51,
+        "Total_Executions": 51
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 32,
+        "Total_Executions": 32
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Ohio",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Ohio",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 36,
+        "Total_Executions": 36
+      },
+      {
+        "State": "Ohio",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 23,
+        "Total_Executions": 23
+      },
+      {
+        "State": "Oklahoma",
+        "Decade": 1840,
+        "Method_Category": "Firing Squad",
+        "Count": 1,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Oklahoma",
+        "Decade": 1880,
+        "Method_Category": "Firing Squad",
+        "Count": 12,
+        "Total_Executions": 15
+      },
+      {
+        "State": "Oklahoma",
+        "Decade": 1890,
+        "Method_Category": "Firing Squad",
+        "Count": 11,
+        "Total_Executions": 21
+      },
+      {
+        "State": "Oklahoma",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Oklahoma",
+        "Decade": 1910,
+        "Method_Category": "Electrocution",
+        "Count": 8,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Oklahoma",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 14,
+        "Total_Executions": 14
+      },
+      {
+        "State": "Oklahoma",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 34,
+        "Total_Executions": 35
+      },
+      {
+        "State": "Oklahoma",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 13,
+        "Total_Executions": 13
+      },
+      {
+        "State": "Oklahoma",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Oklahoma",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Oklahoma",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 38,
+        "Total_Executions": 38
+      },
+      {
+        "State": "Oklahoma",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 105,
+        "Total_Executions": 105
+      },
+      {
+        "State": "Oklahoma",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 21,
+        "Total_Executions": 21
+      },
+      {
+        "State": "Oklahoma",
+        "Decade": 2020,
+        "Method_Category": "Lethal Injection",
+        "Count": 17,
+        "Total_Executions": 17
+      },
+      {
+        "State": "Oregon",
+        "Decade": 1810,
+        "Method_Category": "Firing Squad",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Oregon",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Oregon",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Oregon",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Oregon",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 12,
+        "Total_Executions": 12
+      },
+      {
+        "State": "Oregon",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 13,
+        "Total_Executions": 13
+      },
+      {
+        "State": "Oregon",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Oregon",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 23,
+        "Total_Executions": 23
+      },
+      {
+        "State": "Oregon",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Oregon",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 15,
+        "Total_Executions": 15
+      },
+      {
+        "State": "Oregon",
+        "Decade": 1930,
+        "Method_Category": "Gas Chamber",
+        "Count": 1,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Oregon",
+        "Decade": 1940,
+        "Method_Category": "Gas Chamber",
+        "Count": 12,
+        "Total_Executions": 12
+      },
+      {
+        "State": "Oregon",
+        "Decade": 1950,
+        "Method_Category": "Gas Chamber",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Oregon",
+        "Decade": 1960,
+        "Method_Category": "Gas Chamber",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Oregon",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 19,
+        "Total_Executions": 19
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 9,
+        "Total_Executions": 10
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 10,
+        "Total_Executions": 10
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 18,
+        "Total_Executions": 18
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 19,
+        "Total_Executions": 19
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 26,
+        "Total_Executions": 26
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 31,
+        "Total_Executions": 31
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 52,
+        "Total_Executions": 52
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 42,
+        "Total_Executions": 42
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 66,
+        "Total_Executions": 66
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 146,
+        "Total_Executions": 146
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1910,
+        "Method_Category": "Electrocution",
+        "Count": 57,
+        "Total_Executions": 105
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 141,
+        "Total_Executions": 141
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 82,
+        "Total_Executions": 82
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 36,
+        "Total_Executions": 36
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 31,
+        "Total_Executions": 31
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Pennsylvania",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Rhode Island",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Rhode Island",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 7
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 67,
+        "Total_Executions": 70
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 15,
+        "Total_Executions": 15
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 14,
+        "Total_Executions": 14
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 35,
+        "Total_Executions": 35
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 55,
+        "Total_Executions": 55
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 50,
+        "Total_Executions": 50
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 30,
+        "Total_Executions": 30
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1910,
+        "Method_Category": "Electrocution",
+        "Count": 44,
+        "Total_Executions": 52
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 36,
+        "Total_Executions": 36
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 68,
+        "Total_Executions": 68
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 59,
+        "Total_Executions": 59
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 25,
+        "Total_Executions": 25
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1980,
+        "Method_Category": "Electrocution",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 38,
+        "Total_Executions": 43
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 20,
+        "Total_Executions": 22
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "South Carolina",
+        "Decade": 2020,
+        "Method_Category": "Lethal Injection",
+        "Count": 4,
+        "Total_Executions": 7
+      },
+      {
+        "State": "South Dakota",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "South Dakota",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "South Dakota",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "South Dakota",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "South Dakota",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "South Dakota",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "South Dakota",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "South Dakota",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 15,
+        "Total_Executions": 15
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 19,
+        "Total_Executions": 19
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 10,
+        "Total_Executions": 10
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 12
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 21,
+        "Total_Executions": 21
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 27,
+        "Total_Executions": 27
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 28,
+        "Total_Executions": 28
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 41,
+        "Total_Executions": 41
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 13,
+        "Total_Executions": 17
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 27,
+        "Total_Executions": 27
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 47,
+        "Total_Executions": 47
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 38,
+        "Total_Executions": 38
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 5,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 2010,
+        "Method_Category": "Electrocution",
+        "Count": 4,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Tennessee",
+        "Decade": 2020,
+        "Method_Category": "Lethal Injection",
+        "Count": 3,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Texas",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Texas",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Texas",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Texas",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 18,
+        "Total_Executions": 18
+      },
+      {
+        "State": "Texas",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 16,
+        "Total_Executions": 20
+      },
+      {
+        "State": "Texas",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 50,
+        "Total_Executions": 50
+      },
+      {
+        "State": "Texas",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 64,
+        "Total_Executions": 64
+      },
+      {
+        "State": "Texas",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 101,
+        "Total_Executions": 101
+      },
+      {
+        "State": "Texas",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 71,
+        "Total_Executions": 71
+      },
+      {
+        "State": "Texas",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 51,
+        "Total_Executions": 51
+      },
+      {
+        "State": "Texas",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 56,
+        "Total_Executions": 66
+      },
+      {
+        "State": "Texas",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 122,
+        "Total_Executions": 122
+      },
+      {
+        "State": "Texas",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 78,
+        "Total_Executions": 78
+      },
+      {
+        "State": "Texas",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 76,
+        "Total_Executions": 76
+      },
+      {
+        "State": "Texas",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 29,
+        "Total_Executions": 29
+      },
+      {
+        "State": "Texas",
+        "Decade": 1980,
+        "Method_Category": "Lethal Injection",
+        "Count": 66,
+        "Total_Executions": 66
+      },
+      {
+        "State": "Texas",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 328,
+        "Total_Executions": 328
+      },
+      {
+        "State": "Texas",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 331,
+        "Total_Executions": 331
+      },
+      {
+        "State": "Texas",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 120,
+        "Total_Executions": 120
+      },
+      {
+        "State": "Texas",
+        "Decade": 2020,
+        "Method_Category": "Lethal Injection",
+        "Count": 33,
+        "Total_Executions": 33
+      },
+      {
+        "State": "Utah",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Utah",
+        "Decade": 1860,
+        "Method_Category": "Firing Squad",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Utah",
+        "Decade": 1870,
+        "Method_Category": "Firing Squad",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Utah",
+        "Decade": 1880,
+        "Method_Category": "Firing Squad",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Utah",
+        "Decade": 1890,
+        "Method_Category": "Firing Squad",
+        "Count": 2,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Utah",
+        "Decade": 1900,
+        "Method_Category": "Firing Squad",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Utah",
+        "Decade": 1910,
+        "Method_Category": "Firing Squad",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Utah",
+        "Decade": 1920,
+        "Method_Category": "Firing Squad",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Utah",
+        "Decade": 1930,
+        "Method_Category": "Firing Squad",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Utah",
+        "Decade": 1940,
+        "Method_Category": "Firing Squad",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Utah",
+        "Decade": 1950,
+        "Method_Category": "Firing Squad",
+        "Count": 5,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Utah",
+        "Decade": 1960,
+        "Method_Category": "Firing Squad",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Utah",
+        "Decade": 1970,
+        "Method_Category": "Firing Squad",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Utah",
+        "Decade": 1980,
+        "Method_Category": "Lethal Injection",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Utah",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 4,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Utah",
+        "Decade": 2010,
+        "Method_Category": "Firing Squad",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Utah",
+        "Decade": 2020,
+        "Method_Category": "Lethal Injection",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Vermont",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Vermont",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Vermont",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Vermont",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Vermont",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Vermont",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Vermont",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Vermont",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Vermont",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Vermont",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Vermont",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Vermont",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Vermont",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 81,
+        "Total_Executions": 81
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 55,
+        "Total_Executions": 55
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 104,
+        "Total_Executions": 104
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 65,
+        "Total_Executions": 65
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 47,
+        "Total_Executions": 47
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 83,
+        "Total_Executions": 83
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 55,
+        "Total_Executions": 55
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 25,
+        "Total_Executions": 25
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 28,
+        "Total_Executions": 28
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 34,
+        "Total_Executions": 34
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 68,
+        "Total_Executions": 87
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1910,
+        "Method_Category": "Electrocution",
+        "Count": 80,
+        "Total_Executions": 80
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1920,
+        "Method_Category": "Electrocution",
+        "Count": 45,
+        "Total_Executions": 45
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 28,
+        "Total_Executions": 28
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 35,
+        "Total_Executions": 35
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 23,
+        "Total_Executions": 23
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1960,
+        "Method_Category": "Electrocution",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1980,
+        "Method_Category": "Electrocution",
+        "Count": 16,
+        "Total_Executions": 16
+      },
+      {
+        "State": "Virginia",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 96,
+        "Total_Executions": 128
+      },
+      {
+        "State": "Virginia",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 40,
+        "Total_Executions": 45
+      },
+      {
+        "State": "Virginia",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 6,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Virginia",
+        "Decade": 2020,
+        "Method_Category": "Lethal Injection",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Washington",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Washington",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Washington",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "Washington",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Washington",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 8,
+        "Total_Executions": 8
+      },
+      {
+        "State": "Washington",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 21,
+        "Total_Executions": 21
+      },
+      {
+        "State": "Washington",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Washington",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Washington",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 23,
+        "Total_Executions": 23
+      },
+      {
+        "State": "Washington",
+        "Decade": 1940,
+        "Method_Category": "Hanging",
+        "Count": 16,
+        "Total_Executions": 16
+      },
+      {
+        "State": "Washington",
+        "Decade": 1950,
+        "Method_Category": "Hanging",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Washington",
+        "Decade": 1960,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Washington",
+        "Decade": 1990,
+        "Method_Category": "Hanging",
+        "Count": 4,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Washington",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Washington",
+        "Decade": 2010,
+        "Method_Category": "Lethal Injection",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Washington, D.C.",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Washington, D.C.",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 10,
+        "Total_Executions": 10
+      },
+      {
+        "State": "Washington, D.C.",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "Washington, D.C.",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Washington, D.C.",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "Washington, D.C.",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 14,
+        "Total_Executions": 14
+      },
+      {
+        "State": "Washington, D.C.",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Washington, D.C.",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 15
+      },
+      {
+        "State": "Washington, D.C.",
+        "Decade": 1930,
+        "Method_Category": "Electrocution",
+        "Count": 20,
+        "Total_Executions": 20
+      },
+      {
+        "State": "Washington, D.C.",
+        "Decade": 1940,
+        "Method_Category": "Electrocution",
+        "Count": 22,
+        "Total_Executions": 22
+      },
+      {
+        "State": "Washington, D.C.",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 4,
+        "Total_Executions": 4
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 1800,
+        "Method_Category": "Hanging",
+        "Count": 6,
+        "Total_Executions": 6
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 1810,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 1820,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 6
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 1830,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 1840,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 13,
+        "Total_Executions": 13
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 1860,
+        "Method_Category": "Hanging",
+        "Count": 7,
+        "Total_Executions": 7
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 1870,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 16,
+        "Total_Executions": 16
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 10,
+        "Total_Executions": 10
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 16,
+        "Total_Executions": 17
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 24,
+        "Total_Executions": 24
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 20,
+        "Total_Executions": 20
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 1940,
+        "Method_Category": "Hanging",
+        "Count": 11,
+        "Total_Executions": 11
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 1950,
+        "Method_Category": "Electrocution",
+        "Count": 9,
+        "Total_Executions": 9
+      },
+      {
+        "State": "West Virginia",
+        "Decade": 2000,
+        "Method_Category": "Lethal Injection",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Wisconsin",
+        "Decade": 1850,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Wyoming",
+        "Decade": 1880,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Wyoming",
+        "Decade": 1890,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Wyoming",
+        "Decade": 1900,
+        "Method_Category": "Hanging",
+        "Count": 2,
+        "Total_Executions": 2
+      },
+      {
+        "State": "Wyoming",
+        "Decade": 1910,
+        "Method_Category": "Hanging",
+        "Count": 5,
+        "Total_Executions": 5
+      },
+      {
+        "State": "Wyoming",
+        "Decade": 1920,
+        "Method_Category": "Hanging",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Wyoming",
+        "Decade": 1930,
+        "Method_Category": "Hanging",
+        "Count": 3,
+        "Total_Executions": 4
+      },
+      {
+        "State": "Wyoming",
+        "Decade": 1940,
+        "Method_Category": "Gas Chamber",
+        "Count": 3,
+        "Total_Executions": 3
+      },
+      {
+        "State": "Wyoming",
+        "Decade": 1960,
+        "Method_Category": "Gas Chamber",
+        "Count": 1,
+        "Total_Executions": 1
+      },
+      {
+        "State": "Wyoming",
+        "Decade": 1990,
+        "Method_Category": "Lethal Injection",
+        "Count": 2,
+        "Total_Executions": 2
+      }
+    ]
+  }
+}

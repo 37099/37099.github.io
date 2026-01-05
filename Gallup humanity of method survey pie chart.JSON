@@ -1,0 +1,60 @@
+{
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "data": {"name": "data-cae164fcb33153b0a40e9fcea4d959b0"},
+  "mark": {"type": "arc"},
+  "encoding": {
+    "color": {
+      "field": "Method",
+      "scale": {
+        "domain": [
+          "Electric chair",
+          "Gas chamber",
+          "Lethal injection",
+          "Firing squad",
+          "Others or no opinion"
+        ],
+        "range": ["#0072B2", "#009E73", "#F0E442", "#FF69B4", "#F2F2F2"]
+      },
+      "title": "Method",
+      "type": "nominal"
+    },
+    "detail": {"field": "ID", "type": "nominal"},
+    "theta": {"field": "Answer", "type": "quantitative"}
+  },
+  "title": {
+    "text": "Which method is the most humane?",
+    "subtitle": "Source: Gallup"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-cae164fcb33153b0a40e9fcea4d959b0": [
+      {
+        "Method": "Lethal injection",
+        "Answer": 65,
+        "Method_Grouped": "Lethal injection"
+      },
+      {"Method": "Firing squad", "Answer": 9, "Method_Grouped": "Firing squad"},
+      {
+        "Method": "Hanging",
+        "Answer": 5,
+        "Method_Grouped": "Others or no opinion"
+      },
+      {
+        "Method": "Electric chair",
+        "Answer": 4,
+        "Method_Grouped": "Electric chair"
+      },
+      {"Method": "Gas chamber", "Answer": 4, "Method_Grouped": "Gas chamber"},
+      {
+        "Method": "None (vol.)",
+        "Answer": 10,
+        "Method_Grouped": "Others or no opinion"
+      },
+      {
+        "Method": "No opinion",
+        "Answer": 3,
+        "Method_Grouped": "Others or no opinion"
+      }
+    ]
+  }
+}
