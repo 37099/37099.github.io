@@ -11,9 +11,11 @@
           "Gas chamber",
           "Lethal injection",
           "Firing squad",
-          "Others or no opinion"
+          "Hanging",
+          "None (vol.)",
+          "No opinion"
         ],
-        "range": ["#0072B2", "#009E73", "#F0E442", "#FF69B4", "#F2F2F2"]
+        "range": ["#0072B2", "#009E73", "#F0E442", "#FF69B4", "#654321", "#D3D3D3", "#C0C0C0"]
       },
       "title": "Method",
       "type": "nominal"
@@ -24,7 +26,7 @@
   "title": {
     "text": "Which method is the most humane?",
     "subtitle": "Source: Gallup",
-    "anchor":"start"
+    "anchor": "start"
   },
   "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
   "datasets": {
@@ -38,7 +40,7 @@
       {
         "Method": "Hanging",
         "Answer": 5,
-        "Method_Grouped": "Others or no opinion"
+        "Method_Grouped": "Hanging"
       },
       {
         "Method": "Electric chair",
@@ -49,12 +51,12 @@
       {
         "Method": "None (vol.)",
         "Answer": 10,
-        "Method_Grouped": "Others or no opinion"
+        "Method_Grouped": "None (vol.)"
       },
       {
         "Method": "No opinion",
         "Answer": 3,
-        "Method_Grouped": "Others or no opinion"
+        "Method_Grouped": "No opinion"
       }
     ]
   }
