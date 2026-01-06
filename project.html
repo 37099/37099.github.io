@@ -78,9 +78,11 @@
 
         <section>
         <div class="chart-description">
-            <h2>Who Is This Worst For?</h2>
+            <h2>Is It At Least a Deterrent?</h2>
             <p>
-                TKTK
+                Perhaps the risks are worth it, if the death penalty deters homicides. I have read before that it doesn't, but I wanted to test it with my own data.         <p>
+            I used supervised learning (linear regression) to test the deterrence hypothesis and found that poverty strongly predicts homicide rates (β=0.56, R²=0.19) while executions show no meaningful effect (β≈-0.02). Colab analysis <a href="https://colab.research.google.com/drive/1GIZPhX0kU6wpbTeN4wOqsCxUXcQWXMpS?usp=sharing">here</a>.
+        </p>
             </p>
         </div>
         <figure id="Location6"></figure>
@@ -112,12 +114,14 @@
         let figure_3_spec = "Gallup humanity of method survey pie chart.JSON"
         let figure_4_spec = "Execution methods by botch rate US.JSON"
         let figure_5_spec = "Time to death chart.json"
+        let figure_6_spec = "Homicide prediction chart.JSON"
 
         vegaEmbed('#Location1', figure_1_spec)
         vegaEmbed('#Location2', figure_2_spec)
         vegaEmbed('#Location3', figure_3_spec)
         vegaEmbed('#Location4', figure_4_spec)
         vegaEmbed('#Location5', figure_5_spec)
+        vegaEmbed('#Location6',figure_6_spec)
 
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
