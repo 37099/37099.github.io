@@ -1,0 +1,60 @@
+{
+  "config": {
+    "view": {"continuousWidth": 300, "continuousHeight": 300, "stroke": null}
+  },
+  "data": {"name": "data-032e7b46c7cf52ca0ad7b39790751987"},
+  "mark": {"type": "bar"},
+  "encoding": {
+    "color": {
+      "field": "Type",
+      "legend": null,
+      "scale": {
+        "domain": ["Execution Variable", "Economic Variable"],
+        "range": ["#e74c3c", "#3498db"]
+      },
+      "type": "nominal"
+    },
+    "x": {
+      "field": "Coefficient",
+      "scale": {"domain": [-0.1, 0.6]},
+      "title": "Effect on Homicide Rate (per 100k population)",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "Feature",
+      "sort": {"field": "Abs_Coef", "order": "descending"},
+      "title": "",
+      "type": "nominal"
+    }
+  },
+  "height": 250,
+  "title": {
+    "text": "Supervised Learning: What Predicts Homicide Rates?",
+    "anchor": "start",
+    "subtitle": "R² = 0.191 | Sources: U.S. Census, CDC Wonder, DPIC"
+  },
+  "width": 600,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-032e7b46c7cf52ca0ad7b39790751987": [
+      {
+        "Feature": "Current Year Executions",
+        "Coefficient": -0.018553422529372768,
+        "Type": "Execution Variable",
+        "Abs_Coef": 0.018553422529372768
+      },
+      {
+        "Feature": "Previous Year Executions",
+        "Coefficient": -0.008642814359780718,
+        "Type": "Execution Variable",
+        "Abs_Coef": 0.008642814359780718
+      },
+      {
+        "Feature": "Poverty Rate (%)",
+        "Coefficient": 0.5634357046522571,
+        "Type": "Economic Variable",
+        "Abs_Coef": 0.5634357046522571
+      }
+    ]
+  }
+}
