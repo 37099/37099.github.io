@@ -47,7 +47,7 @@
          <div class="chart-description">
             <h2>A Historical Perspective</h2>
             <p>
-                The history of capital punishment in the U.S. spans four key eras: hanging, which predominated from colonial days through the early 20th century; the electric chair; the de facto ban in the mid 1970s following Furman v. Georgia, which ruled that existing death penalty statutes were unconstitutioanl; and the modern era beginning with Gregg v Georgia (which effectively reinstated the death penalty), which has been dominated by lethal injection. My Colab analysis for both of the following charts is <a href="https://colab.research.google.com/drive/1SX7xM5HU0rMCM3RIfiiiQGTnGCSdAR2f?usp=sharing">here</a>.
+                The history of capital punishment in the U.S. spans four key eras: hanging, which predominated from colonial days through the early 20th century; the electric chair; the de facto ban in the mid 1970s following Furman v. Georgia, which ruled that existing death penalty statutes were unconstitutional; and the modern era beginning with Gregg v Georgia (which effectively reinstated the death penalty), which has been dominated by lethal injection. 
             </p>
         </div>
         <figure id="Location1"></figure>
@@ -78,21 +78,40 @@
 
         <section>
         <div class="chart-description">
-            <h2>Is It At Least a Deterrent?</h2>
+            <h2>Conclusion</h2>
             <p>
-                Perhaps the risks are worth it, if the death penalty deters homicides. I have read before that it doesn't, but I wanted to test it with my own data.         <p>
-            I used supervised learning (linear regression) to test the deterrence hypothesis and found that poverty strongly predicts homicide rates (β=0.56, R²=0.19) while executions show no meaningful effect (β≈-0.02). Colab analysis <a href="https://colab.research.google.com/drive/1GIZPhX0kU6wpbTeN4wOqsCxUXcQWXMpS?usp=sharing">here</a>.
-        </p>
+                Lethal injection, introduced as and believed by a majority of the public to be the most humane way to execute someone, has the highest botch rate and longest duration. Geographic concentration (five states account for 80% of modern executions) and disparate method adoption suggest implementation is driven by regional politics rather than evidence of "humanity." This analysis enables several extensions: (1) examining demographic disparities in method selection and botch rates, (2) analyzing pharmaceutical industry withdrawal's impact on state protocols, (3) investigating time-to-death variation within lethal injection protocols (single- vs. three-drug cocktails, compounded vs. FDA-approved medications), (4) comparing how "botched" is defined across different eras, and (5) analyzing whether media coverage of botched executions affects public opinion and state policy.
+            </p>
+        </div>
+        <figure id="Location7"></figure>
+    </section>
+
+        <section>
+        <div class="chart-description">
+            <h2>Further Analysis: Executions and Crime</h2>
+            <p>
+                Given the geographic correlation between executions and violence, I explored whether executions might reduce crime even if they're not humane. Using linear regression on state-year data (1999-2020), I found poverty predicts homicides (β=0.56) while executions show negligible effect (β≈-0.02). This aligns with criminological consensus that social factors, not punishment severity, drive violent crime rates. </p>
             </p>
         </div>
         <figure id="Location6"></figure>
     </section>
 
-    <section>
+        <section>
         <div class="chart-description">
-            <h2>Conclusion</h2>
+            <h2>Data & Tools</h2>
             <p>
-                TKTK
+                This project combines five primary data sources: 1) the Espy File, a master repository of U.S. executions between 1608-2002, published by the U.S. Bureau of Justice Statistics; 2) records of executions since 1976 sourced from the Death Penalty Information Center (DPIC); 3) records of botched executions scraped from the DPIC; 4) U.S. homicide data by state 1999-2020 from the U.S. Centres for Disease Control and Prevention; and 5) poverty data by state 1998-2024 from the U.S. Census. Other data sources included Gallup for polling data and NBC news reporting. All of this data is of a manageable size, so I was able to download or scrape CSV files which I saved to my GitHub repo to create stable public URLs. I did all my cleaning, merging, analysis and charting in Colab/Altair, saving the chart JSON files to my repo. This workflow is transparent and reproducible but optimised for occasional updates rather than real-time ones.
+
+To update my existing charts, download or scrape the latest data from the sources above and upload to Colab, merge with current data, and rerun. To verify findings or conduct further analysis (e.g. deep dives on other methods, or individual states), use the documented Colab notebooks below. 
+
+            </p>
+            <p>
+                Colab workbook on historical analysis: <a href="https://colab.research.google.com/drive/1SX7xM5HU0rMCM3RIfiiiQGTnGCSdAR2f?usp=sharing">here</a>.
+                Colab workbook on Gallup survey data: <a href="https://colab.research.google.com/drive/1wN4tSXbdrDxa2St5F4TObVEHwa5v4ZgU?usp=sharing">here</a>.
+                Colab containing time-to-death analysis: <a href="https://colab.research.google.com/drive/1MFcisyRHMarMatg-e6wnYTaiN9Iub64Q?usp=sharing">here</a>.
+                Colab containing executions/crime/poverty relationships analysis: <a href="https://colab.research.google.com/drive/1GIZPhX0kU6wpbTeN4wOqsCxUXcQWXMpS?usp=sharing">here</a>.
+                Colab containing death penalty heatmap (not included in final project): <a href="https://colab.research.google.com/drive/1cN-zxCKoVWxKZsngBvXWoCzqLNTdZwWU?usp=sharing">here</a>.
+
             </p>
         </div>
         <figure id="Location7"></figure>
@@ -106,6 +125,7 @@
             </p>
             </p>
     </section>
+
     <script>
         // This is a comment in JavaScript - it's a different language to HTML and CSS
 
