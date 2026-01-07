@@ -1,0 +1,59 @@
+{
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "data": {"name": "data-f78a48f21eaf7cb3f3152810e01e58b6"},
+  "mark": {"type": "bar"},
+  "encoding": {
+    "x": {"field": "price_bin", "title": "Price (£)", "type": "quantitative"},
+    "y": {
+      "field": "count",
+      "title": "Number of Observations",
+      "type": "quantitative"
+    }
+  },
+  "height": 400,
+  "title": {
+    "text": "New World Wine Price Distribution",
+    "subtitle": [
+      "Frequency of prices across all stores and dates (1988-2025)",
+      "Source: ONS microdata via Davies (2021)"
+    ],
+    "fontSize": 16,
+    "anchor": "start"
+  },
+  "width": 600,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-f78a48f21eaf7cb3f3152810e01e58b6": [
+      {"price_bin": 2.5, "count": 13},
+      {"price_bin": 3, "count": 377},
+      {"price_bin": 3.5, "count": 1852},
+      {"price_bin": 4, "count": 3346},
+      {"price_bin": 4.5, "count": 2979},
+      {"price_bin": 5, "count": 10490},
+      {"price_bin": 5.5, "count": 4008},
+      {"price_bin": 6, "count": 6941},
+      {"price_bin": 6.5, "count": 2785},
+      {"price_bin": 7, "count": 7094},
+      {"price_bin": 7.5, "count": 2668},
+      {"price_bin": 8, "count": 2924},
+      {"price_bin": 8.5, "count": 1779},
+      {"price_bin": 9, "count": 958},
+      {"price_bin": 9.5, "count": 769},
+      {"price_bin": 10, "count": 757},
+      {"price_bin": 10.5, "count": 79},
+      {"price_bin": 11, "count": 439},
+      {"price_bin": 11.5, "count": 134},
+      {"price_bin": 12, "count": 66},
+      {"price_bin": 12.5, "count": 12},
+      {"price_bin": 13, "count": 341},
+      {"price_bin": 13.5, "count": 8},
+      {"price_bin": 14, "count": 2},
+      {"price_bin": 14.5, "count": 3},
+      {"price_bin": 15, "count": 15},
+      {"price_bin": 17, "count": 2},
+      {"price_bin": 23, "count": 13},
+      {"price_bin": 24, "count": 6},
+      {"price_bin": 37, "count": 3}
+    ]
+  }
+}
