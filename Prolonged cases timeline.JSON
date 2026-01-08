@@ -1,0 +1,122 @@
+{
+  "config": {
+    "view": {"continuousWidth": 300, "continuousHeight": 300, "stroke": null},
+    "axis": {"domainColor": "#999", "gridColor": "#e0e0e0"}
+  },
+  "data": {"name": "data-b164b1a8cd1ba85d23604cb9d4f95d5a"},
+  "mark": {
+    "type": "circle",
+    "opacity": 0.9,
+    "size": 200,
+    "stroke": "white",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "color": {
+      "field": "State",
+      "legend": {"labelFontSize": 11, "title": "State", "titleFontSize": 12},
+      "scale": {
+        "domain": ["Texas", "Georgia", "Ohio", "Oklahoma", "Alabama"],
+        "range": ["#e74c3c", "#f39c12", "#3498db", "#9b59b6", "#c0392b"]
+      },
+      "type": "nominal"
+    },
+    "tooltip": [
+      {"field": "Name", "title": "Person", "type": "nominal"},
+      {"field": "Year", "format": "d", "type": "quantitative"},
+      {"field": "State", "type": "nominal"},
+      {
+        "field": "Duration_Minutes",
+        "title": "Duration (at least)",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {
+        "format": "d",
+        "grid": false,
+        "labelFontSize": 12,
+        "title": "",
+        "titleFontSize": 14
+      },
+      "field": "Year",
+      "scale": {"domain": [1985, 2024]},
+      "type": "quantitative"
+    },
+    "y": {
+      "axis": {"grid": true, "labelFontSize": 12, "titleFontSize": 14},
+      "field": "Duration_Minutes",
+      "scale": {"domain": [0, 220]},
+      "title": "Duration (minutes)",
+      "type": "quantitative"
+    }
+  },
+  "height": 450,
+  "title": {
+    "text": "Prolonged Lethal Injections Becoming More Common",
+    "anchor": "start",
+    "fontSize": 16,
+    "subtitle": "Botched Lethal Injections Lasting More than 1h | Source: Reprieve",
+    "subtitleFontSize": 13
+  },
+  "width": 700,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-b164b1a8cd1ba85d23604cb9d4f95d5a": [
+      {
+        "Name": "Elliot Johnson",
+        "Year": 1987,
+        "Duration_Minutes": 60,
+        "State": "Texas"
+      },
+      {
+        "Name": "Jose High",
+        "Year": 2001,
+        "Duration_Minutes": 60,
+        "State": "Georgia"
+      },
+      {
+        "Name": "Romell Broom",
+        "Year": 2009,
+        "Duration_Minutes": 120,
+        "State": "Ohio"
+      },
+      {
+        "Name": "Clayton Lockett",
+        "Year": 2014,
+        "Duration_Minutes": 90,
+        "State": "Oklahoma"
+      },
+      {
+        "Name": "Brandon Jones",
+        "Year": 2016,
+        "Duration_Minutes": 60,
+        "State": "Georgia"
+      },
+      {
+        "Name": "Doyle Hamm",
+        "Year": 2018,
+        "Duration_Minutes": 150,
+        "State": "Alabama"
+      },
+      {
+        "Name": "Alan Miller",
+        "Year": 2022,
+        "Duration_Minutes": 90,
+        "State": "Alabama"
+      },
+      {
+        "Name": "Joe Nathan James Jr.",
+        "Year": 2022,
+        "Duration_Minutes": 210,
+        "State": "Alabama"
+      },
+      {
+        "Name": "Kenneth Smith",
+        "Year": 2022,
+        "Duration_Minutes": 90,
+        "State": "Alabama"
+      }
+    ]
+  }
+}

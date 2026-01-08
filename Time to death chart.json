@@ -64,7 +64,7 @@
   "title": {
     "text": "Maximum Time to Death by Execution Method",
     "anchor": "start",
-    "subtitle": "Source: U.S. Supreme Court records as reported by NBC News "
+    "subtitle": "Source: U.S. Supreme Court records as reported by NBC News, 2015"
   },
   "width": 600,
   "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
