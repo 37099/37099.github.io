@@ -85,7 +85,7 @@
     "data-4f7156926b9424a13c699fe4a9c3524b": [
       {
         "State": "Alabama",
-        "State_FIPS": 1,
+        "State_FIPS": "01",
         "Electrocution": 201,
         "Firing Squad": 1,
         "Gas Chamber": 7,
@@ -95,7 +95,7 @@
       },
       {
         "State": "Alaska",
-        "State_FIPS": 2,
+        "State_FIPS": "02",
         "Electrocution": 0,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -105,7 +105,7 @@
       },
       {
         "State": "Arizona",
-        "State_FIPS": 4,
+        "State_FIPS": "04",
         "Electrocution": 0,
         "Firing Squad": 0,
         "Gas Chamber": 39,
@@ -115,7 +115,7 @@
       },
       {
         "State": "Arkansas",
-        "State_FIPS": 5,
+        "State_FIPS": "05",
         "Electrocution": 171,
         "Firing Squad": 4,
         "Gas Chamber": 0,
@@ -125,7 +125,7 @@
       },
       {
         "State": "California",
-        "State_FIPS": 6,
+        "State_FIPS": "06",
         "Electrocution": 0,
         "Firing Squad": 28,
         "Gas Chamber": 198,
@@ -135,7 +135,7 @@
       },
       {
         "State": "Colorado",
-        "State_FIPS": 8,
+        "State_FIPS": "08",
         "Electrocution": 0,
         "Firing Squad": 0,
         "Gas Chamber": 32,
@@ -145,7 +145,7 @@
       },
       {
         "State": "Connecticut",
-        "State_FIPS": 9,
+        "State_FIPS": "09",
         "Electrocution": 18,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -155,7 +155,7 @@
       },
       {
         "State": "Delaware",
-        "State_FIPS": 10,
+        "State_FIPS": "10",
         "Electrocution": 0,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -165,7 +165,7 @@
       },
       {
         "State": "Florida",
-        "State_FIPS": 12,
+        "State_FIPS": "12",
         "Electrocution": 284,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -175,7 +175,7 @@
       },
       {
         "State": "Georgia",
-        "State_FIPS": 13,
+        "State_FIPS": "13",
         "Electrocution": 462,
         "Firing Squad": 1,
         "Gas Chamber": 0,
@@ -185,7 +185,7 @@
       },
       {
         "State": "Hawaii",
-        "State_FIPS": 15,
+        "State_FIPS": "15",
         "Electrocution": 0,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -195,7 +195,7 @@
       },
       {
         "State": "Idaho",
-        "State_FIPS": 16,
+        "State_FIPS": "16",
         "Electrocution": 0,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -205,7 +205,7 @@
       },
       {
         "State": "Illinois",
-        "State_FIPS": 17,
+        "State_FIPS": "17",
         "Electrocution": 98,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -215,7 +215,7 @@
       },
       {
         "State": "Indiana",
-        "State_FIPS": 18,
+        "State_FIPS": "18",
         "Electrocution": 65,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -225,7 +225,7 @@
       },
       {
         "State": "Iowa",
-        "State_FIPS": 19,
+        "State_FIPS": "19",
         "Electrocution": 0,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -235,7 +235,7 @@
       },
       {
         "State": "Kansas",
-        "State_FIPS": 20,
+        "State_FIPS": "20",
         "Electrocution": 0,
         "Firing Squad": 1,
         "Gas Chamber": 0,
@@ -245,7 +245,7 @@
       },
       {
         "State": "Kentucky",
-        "State_FIPS": 21,
+        "State_FIPS": "21",
         "Electrocution": 164,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -255,7 +255,7 @@
       },
       {
         "State": "Louisiana",
-        "State_FIPS": 22,
+        "State_FIPS": "22",
         "Electrocution": 106,
         "Firing Squad": 6,
         "Gas Chamber": 1,
@@ -265,7 +265,7 @@
       },
       {
         "State": "Maine",
-        "State_FIPS": 23,
+        "State_FIPS": "23",
         "Electrocution": 0,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -275,7 +275,7 @@
       },
       {
         "State": "Maryland",
-        "State_FIPS": 24,
+        "State_FIPS": "24",
         "Electrocution": 0,
         "Firing Squad": 2,
         "Gas Chamber": 3,
@@ -285,7 +285,7 @@
       },
       {
         "State": "Massachusetts",
-        "State_FIPS": 25,
+        "State_FIPS": "25",
         "Electrocution": 65,
         "Firing Squad": 14,
         "Gas Chamber": 0,
@@ -295,7 +295,7 @@
       },
       {
         "State": "Michigan",
-        "State_FIPS": 26,
+        "State_FIPS": "26",
         "Electrocution": 0,
         "Firing Squad": 2,
         "Gas Chamber": 0,
@@ -305,7 +305,7 @@
       },
       {
         "State": "Minnesota",
-        "State_FIPS": 27,
+        "State_FIPS": "27",
         "Electrocution": 0,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -315,7 +315,7 @@
       },
       {
         "State": "Mississippi",
-        "State_FIPS": 28,
+        "State_FIPS": "28",
         "Electrocution": 63,
         "Firing Squad": 0,
         "Gas Chamber": 39,
@@ -325,7 +325,7 @@
       },
       {
         "State": "Missouri",
-        "State_FIPS": 29,
+        "State_FIPS": "29",
         "Electrocution": 0,
         "Firing Squad": 1,
         "Gas Chamber": 39,
@@ -335,7 +335,7 @@
       },
       {
         "State": "Montana",
-        "State_FIPS": 30,
+        "State_FIPS": "30",
         "Electrocution": 0,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -345,7 +345,7 @@
       },
       {
         "State": "Nebraska",
-        "State_FIPS": 31,
+        "State_FIPS": "31",
         "Electrocution": 15,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -355,7 +355,7 @@
       },
       {
         "State": "Nevada",
-        "State_FIPS": 32,
+        "State_FIPS": "32",
         "Electrocution": 3,
         "Firing Squad": 1,
         "Gas Chamber": 32,
@@ -365,7 +365,7 @@
       },
       {
         "State": "New Hampshire",
-        "State_FIPS": 33,
+        "State_FIPS": "33",
         "Electrocution": 0,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -375,7 +375,7 @@
       },
       {
         "State": "New Jersey",
-        "State_FIPS": 34,
+        "State_FIPS": "34",
         "Electrocution": 160,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -385,7 +385,7 @@
       },
       {
         "State": "New Mexico",
-        "State_FIPS": 35,
+        "State_FIPS": "35",
         "Electrocution": 7,
         "Firing Squad": 0,
         "Gas Chamber": 1,
@@ -395,7 +395,7 @@
       },
       {
         "State": "New York",
-        "State_FIPS": 36,
+        "State_FIPS": "36",
         "Electrocution": 695,
         "Firing Squad": 4,
         "Gas Chamber": 0,
@@ -405,7 +405,7 @@
       },
       {
         "State": "North Carolina",
-        "State_FIPS": 37,
+        "State_FIPS": "37",
         "Electrocution": 166,
         "Firing Squad": 0,
         "Gas Chamber": 198,
@@ -415,7 +415,7 @@
       },
       {
         "State": "North Dakota",
-        "State_FIPS": 38,
+        "State_FIPS": "38",
         "Electrocution": 0,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -425,7 +425,7 @@
       },
       {
         "State": "Ohio",
-        "State_FIPS": 39,
+        "State_FIPS": "39",
         "Electrocution": 315,
         "Firing Squad": 2,
         "Gas Chamber": 0,
@@ -435,7 +435,7 @@
       },
       {
         "State": "Oklahoma",
-        "State_FIPS": 40,
+        "State_FIPS": "40",
         "Electrocution": 82,
         "Firing Squad": 24,
         "Gas Chamber": 0,
@@ -445,7 +445,7 @@
       },
       {
         "State": "Oregon",
-        "State_FIPS": 41,
+        "State_FIPS": "41",
         "Electrocution": 0,
         "Firing Squad": 2,
         "Gas Chamber": 18,
@@ -455,7 +455,7 @@
       },
       {
         "State": "Pennsylvania",
-        "State_FIPS": 42,
+        "State_FIPS": "42",
         "Electrocution": 350,
         "Firing Squad": 4,
         "Gas Chamber": 0,
@@ -465,7 +465,7 @@
       },
       {
         "State": "Rhode Island",
-        "State_FIPS": 44,
+        "State_FIPS": "44",
         "Electrocution": 0,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -475,7 +475,7 @@
       },
       {
         "State": "South Carolina",
-        "State_FIPS": 45,
+        "State_FIPS": "45",
         "Electrocution": 251,
         "Firing Squad": 3,
         "Gas Chamber": 0,
@@ -485,7 +485,7 @@
       },
       {
         "State": "South Dakota",
-        "State_FIPS": 46,
+        "State_FIPS": "46",
         "Electrocution": 1,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -495,7 +495,7 @@
       },
       {
         "State": "Tennessee",
-        "State_FIPS": 47,
+        "State_FIPS": "47",
         "Electrocution": 131,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -505,7 +505,7 @@
       },
       {
         "State": "Texas",
-        "State_FIPS": 48,
+        "State_FIPS": "48",
         "Electrocution": 361,
         "Firing Squad": 4,
         "Gas Chamber": 0,
@@ -515,7 +515,7 @@
       },
       {
         "State": "Utah",
-        "State_FIPS": 49,
+        "State_FIPS": "49",
         "Electrocution": 0,
         "Firing Squad": 43,
         "Gas Chamber": 0,
@@ -525,7 +525,7 @@
       },
       {
         "State": "Vermont",
-        "State_FIPS": 50,
+        "State_FIPS": "50",
         "Electrocution": 5,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -535,7 +535,7 @@
       },
       {
         "State": "Virginia",
-        "State_FIPS": 51,
+        "State_FIPS": "51",
         "Electrocution": 291,
         "Firing Squad": 2,
         "Gas Chamber": 0,
@@ -545,7 +545,7 @@
       },
       {
         "State": "Washington",
-        "State_FIPS": 53,
+        "State_FIPS": "53",
         "Electrocution": 0,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -555,7 +555,7 @@
       },
       {
         "State": "Washington, D.C.",
-        "State_FIPS": 11,
+        "State_FIPS": "11",
         "Electrocution": 50,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -565,7 +565,7 @@
       },
       {
         "State": "West Virginia",
-        "State_FIPS": 54,
+        "State_FIPS": "54",
         "Electrocution": 9,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -575,7 +575,7 @@
       },
       {
         "State": "Wisconsin",
-        "State_FIPS": 55,
+        "State_FIPS": "55",
         "Electrocution": 0,
         "Firing Squad": 0,
         "Gas Chamber": 0,
@@ -585,7 +585,7 @@
       },
       {
         "State": "Wyoming",
-        "State_FIPS": 56,
+        "State_FIPS": "56",
         "Electrocution": 0,
         "Firing Squad": 0,
         "Gas Chamber": 5,
